@@ -47,9 +47,9 @@ void TestCardDock::createGlobalSource() {
   globalSource = obs_get_source_by_name("__Test_Card_Global__");
 
   if (!globalSource) {
-    // Create new source
+    // Create new source with correct ID
     obs_data_t *settings = obs_data_create();
-    globalSource = obs_source_create("test_card_source", "__Test_Card_Global__",
+    globalSource = obs_source_create("test_source", "__Test_Card_Global__",
                                      settings, nullptr);
     obs_data_release(settings);
   }
@@ -64,9 +64,57 @@ void TestCardDock::onToggleClicked() {
 
   isEnabled = toggleButton->isChecked();
 
-  // Toggle visibility - for now we just enable/disable
-  // In full implementation, this would add/remove from a global scene
-  obs_source_set_enabled(globalSource, isEnabled);
+  if (isEnabled) {
+    // Add to current scene
+    obs_source_t *scene = obs_frontend_get_current_scene();
+    if (scene) {
+      obs_scene_t *obs_scene = obs_scene_from_source(scene);
+      if (obs_scene) {
+        // Check if already added
+        obs_sceneitem_t *existing =
+            obs_scene_find_source(obs_scene, obs_source_get_name(globalSource));
+        if (!existing) {
+          // Add as scene item
+          obs_sceneitem_t *item = obs_scene_add(obs_scene, globalSource);
+          if (item) {
+            // Position at top-left, fullscreen
+            struct vec2 pos = {0, 0};
+            obs_sceneitem_set_pos(item, &pos);
+
+            // Get canvas size for scale
+            obs_video_info ovi;
+            if (obs_get_video_info(&ovi)) {
+              uint32_t source_w = obs_source_get_width(globalSource);
+              uint32_t source_h = obs_source_get_height(globalSource);
+
+              if (source_w > 0 && source_h > 0) {
+                struct vec2 scale;
+                scale.x = (float)ovi.base_width / (float)source_w;
+                scale.y = (float)ovi.base_height / (float)source_h;
+                obs_sceneitem_set_scale(item, &scale);
+              }
+            }
+          }
+        }
+      }
+      obs_source_release(scene);
+    }
+  } else {
+    // Remove from current scene
+    obs_source_t *scene = obs_frontend_get_current_scene();
+    if (scene) {
+      obs_scene_t *obs_scene = obs_scene_from_source(scene);
+      if (obs_scene) {
+        // Find and remove our source
+        obs_sceneitem_t *item =
+            obs_scene_find_source(obs_scene, obs_source_get_name(globalSource));
+        if (item) {
+          obs_sceneitem_remove(item);
+        }
+      }
+      obs_source_release(scene);
+    }
+  }
 
   updateButtonState();
 }

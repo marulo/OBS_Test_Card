@@ -1040,7 +1040,7 @@ static obs_properties_t *test_source_get_properties(void *data) {
 struct obs_source_info test_source_info = {
     .id = "test_source",
     .type = OBS_SOURCE_TYPE_INPUT,
-    .output_flags = OBS_SOURCE_VIDEO,
+    .output_flags = OBS_SOURCE_VIDEO | OBS_SOURCE_CAP_DISABLED,
     .get_name = test_source_get_name,
     .create = test_source_create,
     .destroy = test_source_destroy,
