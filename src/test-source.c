@@ -24,6 +24,11 @@
 #define DEFAULT_HEIGHT 1080
 #define FONT_SIZE_BASE 48
 
+// Color constants
+#define ALPHA_MASK 0xFF000000
+#define DEFAULT_BG_DARK 0x502822  // Dark brown-red for checkerboard
+#define DEFAULT_BG_LIGHT 0x682f25 // Light brown-red for checkerboard
+
 // Dirty flags for intelligent regeneration
 typedef enum {
   DIRTY_NONE = 0,
@@ -523,8 +528,6 @@ static void render_layer_static(struct test_source_data *data) {
     }
   }
 
-skip_borders:
-
   // Upload to GPU
   if (!data->layer_static) {
     data->layer_static =
@@ -788,9 +791,9 @@ static void test_source_update(void *data, obs_data_t *settings) {
 
   // Update background colors
   src->bg_dark_color =
-      0xFF000000 | (uint32_t)obs_data_get_int(settings, "bg_dark_color");
+      ALPHA_MASK | (uint32_t)obs_data_get_int(settings, "bg_dark_color");
   src->bg_light_color =
-      0xFF000000 | (uint32_t)obs_data_get_int(settings, "bg_light_color");
+      ALPHA_MASK | (uint32_t)obs_data_get_int(settings, "bg_light_color");
 
   // If colors or size changed, force grid regeneration
   if (old_dark != src->bg_dark_color || old_light != src->bg_light_color ||

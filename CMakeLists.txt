@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.10)
+cmake_minimum_required(VERSION 3.16)
 
 project(obs-test-card VERSION 0.1.0)
 
@@ -10,6 +10,13 @@ set(CMAKE_C_STANDARD 11)
 
 # Nombre del archivo de salida (dll)
 set(OUTPUT_NAME "test-source")
+
+# Platform-specific configurations
+if(APPLE)
+    set(CMAKE_OSX_DEPLOYMENT_TARGET "10.15" CACHE STRING "Minimum macOS version")
+    set(CMAKE_INSTALL_RPATH "@executable_path/../Frameworks")
+    set(CMAKE_BUILD_WITH_INSTALL_RPATH TRUE)
+endif()
 
 if(MSVC)
     # Flags recomendados para MSVC
@@ -98,6 +105,28 @@ set_target_properties(${PROJECT_NAME} PROPERTIES
 )
 
 # Copiar recursos (data) al directorio de salida para facilitar pruebas
-file(GLOB_RECURSE RESOURCE_FILES "data/*")
-file(COPY ${RESOURCE_FILES} DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/data")
+# Solo si el directorio data existe
+if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/data")
+    file(GLOB_RECURSE RESOURCE_FILES "data/*")
+    if(RESOURCE_FILES)
+        file(COPY ${RESOURCE_FILES} DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/data")
+    endif()
+endif()
+
+# Install targets (cross-platform)
+if(WIN32)
+    install(TARGETS ${PROJECT_NAME} 
+        LIBRARY DESTINATION "obs-plugins/64bit")
+    if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/data")
+        install(DIRECTORY data/ 
+            DESTINATION "data/obs-plugins/${OUTPUT_NAME}")
+    endif()
+elseif(APPLE)
+    install(TARGETS ${PROJECT_NAME} 
+        LIBRARY DESTINATION "obs-plugins")
+    if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/data")
+        install(DIRECTORY data/ 
+            DESTINATION "data/obs-plugins/${OUTPUT_NAME}")
+    endif()
+endif()
 

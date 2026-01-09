@@ -70,7 +70,7 @@ events:
       The output was:
       0
       Versi├│n de MSBuild 17.14.23+b0019275e para .NET Framework
-      Compilaci├│n iniciada a las 9/1/2026 01:57:08.
+      Compilaci├│n iniciada a las 9/1/2026 12:13:12.
       
       Proyecto "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\4.2.0\\CompilerIdC\\CompilerIdC.vcxproj" en nodo 1 (destinos predeterminados).
       PrepareForBuild:
@@ -108,7 +108,7 @@ events:
           0 Advertencia(s)
           0 Errores
       
-      Tiempo transcurrido 00:00:00.75
+      Tiempo transcurrido 00:00:01.42
       
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -600,7 +600,7 @@ events:
       The output was:
       0
       Versi├│n de MSBuild 17.14.23+b0019275e para .NET Framework
-      Compilaci├│n iniciada a las 9/1/2026 01:57:09.
+      Compilaci├│n iniciada a las 9/1/2026 12:13:14.
       
       Proyecto "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\4.2.0\\CompilerIdCXX\\CompilerIdCXX.vcxproj" en nodo 1 (destinos predeterminados).
       PrepareForBuild:
@@ -638,7 +638,7 @@ events:
           0 Advertencia(s)
           0 Errores
       
-      Tiempo transcurrido 00:00:00.72
+      Tiempo transcurrido 00:00:00.75
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -954,58 +954,58 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "D:/antigravity_dev_files/TEST CARD FILES TO COMPILE/dist/windows/source/build/CMakeFiles/CMakeScratch/TryCompile-7l6rt6"
-      binary: "D:/antigravity_dev_files/TEST CARD FILES TO COMPILE/dist/windows/source/build/CMakeFiles/CMakeScratch/TryCompile-7l6rt6"
+      source: "D:/antigravity_dev_files/TEST CARD FILES TO COMPILE/dist/windows/source/build/CMakeFiles/CMakeScratch/TryCompile-cyxgob"
+      binary: "D:/antigravity_dev_files/TEST CARD FILES TO COMPILE/dist/windows/source/build/CMakeFiles/CMakeScratch/TryCompile-cyxgob"
     cmakeVariables:
-      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
-      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
     buildResult:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'D:/antigravity_dev_files/TEST CARD FILES TO COMPILE/dist/windows/source/build/CMakeFiles/CMakeScratch/TryCompile-7l6rt6'
+        Change Dir: 'D:/antigravity_dev_files/TEST CARD FILES TO COMPILE/dist/windows/source/build/CMakeFiles/CMakeScratch/TryCompile-cyxgob'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_4859b.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_27cf7.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         Versi├│n de MSBuild 17.14.23+b0019275e para .NET Framework
-        Compilaci├│n iniciada a las 9/1/2026 01:57:10.
+        Compilaci├│n iniciada a las 9/1/2026 12:13:15.
         
-        Proyecto "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7l6rt6\\cmTC_4859b.vcxproj" en nodo 1 (destinos predeterminados).
+        Proyecto "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-cyxgob\\cmTC_27cf7.vcxproj" en nodo 1 (destinos predeterminados).
         PrepareForBuild:
           La salida estructurada est├í habilitada. El formato del diagn├│stico del compilador reflejar├í la jerarqu├¡a de errores. Consulte https://aka.ms/cpp/structured-output para obtener m├ís detalles.
-          Creando directorio "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7l6rt6\\Debug\\".
-          Creando directorio "cmTC_4859b.dir\\Debug\\cmTC_4859b.tlog\\".
+          Creando directorio "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-cyxgob\\Debug\\".
+          Creando directorio "cmTC_27cf7.dir\\Debug\\cmTC_27cf7.tlog\\".
         InitializeBuildStatus:
-          Se crear├í "cmTC_4859b.dir\\Debug\\cmTC_4859b.tlog\\unsuccessfulbuild" porque se especific├│ "AlwaysCreate".
-          Aplicando tarea Touch a "cmTC_4859b.dir\\Debug\\cmTC_4859b.tlog\\unsuccessfulbuild".
+          Se crear├í "cmTC_27cf7.dir\\Debug\\cmTC_27cf7.tlog\\unsuccessfulbuild" porque se especific├│ "AlwaysCreate".
+          Aplicando tarea Touch a "cmTC_27cf7.dir\\Debug\\cmTC_27cf7.tlog\\unsuccessfulbuild".
         VcpkgTripletSelection:
           Using triplet "x64-windows" from "C:\\vcpkg\\installed\\x64-windows\\"
           Using normalized configuration "Debug"
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_4859b.dir\\Debug\\\\" /Fd"cmTC_4859b.dir\\Debug\\vc143.pdb" /external:W3 /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCCompilerABI.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_27cf7.dir\\Debug\\\\" /Fd"cmTC_27cf7.dir\\Debug\\vc143.pdb" /external:W1 /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCCompilerABI.c"
           Compilador de optimizaci├│n de C/C++ de Microsoft (R) versi├│n 19.44.35217 para x64
           (C) Microsoft Corporation. Todos los derechos reservados.
-          cl /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_4859b.dir\\Debug\\\\" /Fd"cmTC_4859b.dir\\Debug\\vc143.pdb" /external:W3 /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCCompilerABI.c"
+          cl /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_27cf7.dir\\Debug\\\\" /Fd"cmTC_27cf7.dir\\Debug\\vc143.pdb" /external:W1 /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCCompilerABI.c"
           CMakeCCompilerABI.c
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7l6rt6\\Debug\\cmTC_4859b.exe" /INCREMENTAL /ILK:"cmTC_4859b.dir\\Debug\\cmTC_4859b.ilk" /NOLOGO /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/antigravity_dev_files/TEST CARD FILES TO COMPILE/dist/windows/source/build/CMakeFiles/CMakeScratch/TryCompile-7l6rt6/Debug/cmTC_4859b.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/antigravity_dev_files/TEST CARD FILES TO COMPILE/dist/windows/source/build/CMakeFiles/CMakeScratch/TryCompile-7l6rt6/Debug/cmTC_4859b.lib" /MACHINE:X64  /machine:x64 cmTC_4859b.dir\\Debug\\CMakeCCompilerABI.obj
-          cmTC_4859b.vcxproj -> D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7l6rt6\\Debug\\cmTC_4859b.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-cyxgob\\Debug\\cmTC_27cf7.exe" /INCREMENTAL /ILK:"cmTC_27cf7.dir\\Debug\\cmTC_27cf7.ilk" /NOLOGO /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/antigravity_dev_files/TEST CARD FILES TO COMPILE/dist/windows/source/build/CMakeFiles/CMakeScratch/TryCompile-cyxgob/Debug/cmTC_27cf7.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/antigravity_dev_files/TEST CARD FILES TO COMPILE/dist/windows/source/build/CMakeFiles/CMakeScratch/TryCompile-cyxgob/Debug/cmTC_27cf7.lib" /MACHINE:X64  /machine:x64 cmTC_27cf7.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_27cf7.vcxproj -> D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-cyxgob\\Debug\\cmTC_27cf7.exe
         AppLocalFromInstalled:
-          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7l6rt6\\Debug\\cmTC_4859b.exe" "C:\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_4859b.dir\\Debug\\cmTC_4859b.tlog\\cmTC_4859b.write.1u.tlog" "cmTC_4859b.dir\\Debug\\vcpkg.applocal.log"
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-cyxgob\\Debug\\cmTC_27cf7.exe" "C:\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_27cf7.dir\\Debug\\cmTC_27cf7.tlog\\cmTC_27cf7.write.1u.tlog" "cmTC_27cf7.dir\\Debug\\vcpkg.applocal.log"
           "pwsh.exe" no se reconoce como un comando interno o externo,
           programa o archivo por lotes ejecutable.
-          El comando "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7l6rt6\\Debug\\cmTC_4859b.exe" "C:\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_4859b.dir\\Debug\\cmTC_4859b.tlog\\cmTC_4859b.write.1u.tlog" "cmTC_4859b.dir\\Debug\\vcpkg.applocal.log"" sali├│ con el c├│digo 9009.
-          "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7l6rt6\\Debug\\cmTC_4859b.exe" "C:\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_4859b.dir\\Debug\\cmTC_4859b.tlog\\cmTC_4859b.write.1u.tlog" "cmTC_4859b.dir\\Debug\\vcpkg.applocal.log"
+          El comando "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-cyxgob\\Debug\\cmTC_27cf7.exe" "C:\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_27cf7.dir\\Debug\\cmTC_27cf7.tlog\\cmTC_27cf7.write.1u.tlog" "cmTC_27cf7.dir\\Debug\\vcpkg.applocal.log"" sali├│ con el c├│digo 9009.
+          "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-cyxgob\\Debug\\cmTC_27cf7.exe" "C:\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_27cf7.dir\\Debug\\cmTC_27cf7.tlog\\cmTC_27cf7.write.1u.tlog" "cmTC_27cf7.dir\\Debug\\vcpkg.applocal.log"
         FinalizeBuildStatus:
-          Se eliminar├í el archivo "cmTC_4859b.dir\\Debug\\cmTC_4859b.tlog\\unsuccessfulbuild".
-          Aplicando tarea Touch a "cmTC_4859b.dir\\Debug\\cmTC_4859b.tlog\\cmTC_4859b.lastbuildstate".
-        Compilaci├│n del proyecto terminada "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7l6rt6\\cmTC_4859b.vcxproj" (destinos predeterminados).
+          Se eliminar├í el archivo "cmTC_27cf7.dir\\Debug\\cmTC_27cf7.tlog\\unsuccessfulbuild".
+          Aplicando tarea Touch a "cmTC_27cf7.dir\\Debug\\cmTC_27cf7.tlog\\cmTC_27cf7.lastbuildstate".
+        Compilaci├│n del proyecto terminada "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-cyxgob\\cmTC_27cf7.vcxproj" (destinos predeterminados).
         
         Compilaci├│n correcta.
             0 Advertencia(s)
             0 Errores
         
-        Tiempo transcurrido 00:00:00.72
+        Tiempo transcurrido 00:00:00.82
         
       exitCode: 0
   -
@@ -1045,59 +1045,59 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "D:/antigravity_dev_files/TEST CARD FILES TO COMPILE/dist/windows/source/build/CMakeFiles/CMakeScratch/TryCompile-1yw72b"
-      binary: "D:/antigravity_dev_files/TEST CARD FILES TO COMPILE/dist/windows/source/build/CMakeFiles/CMakeScratch/TryCompile-1yw72b"
+      source: "D:/antigravity_dev_files/TEST CARD FILES TO COMPILE/dist/windows/source/build/CMakeFiles/CMakeScratch/TryCompile-zl48ug"
+      binary: "D:/antigravity_dev_files/TEST CARD FILES TO COMPILE/dist/windows/source/build/CMakeFiles/CMakeScratch/TryCompile-zl48ug"
     cmakeVariables:
-      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
-      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
       CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
     buildResult:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'D:/antigravity_dev_files/TEST CARD FILES TO COMPILE/dist/windows/source/build/CMakeFiles/CMakeScratch/TryCompile-1yw72b'
+        Change Dir: 'D:/antigravity_dev_files/TEST CARD FILES TO COMPILE/dist/windows/source/build/CMakeFiles/CMakeScratch/TryCompile-zl48ug'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_eb320.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_7605e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         Versi├│n de MSBuild 17.14.23+b0019275e para .NET Framework
-        Compilaci├│n iniciada a las 9/1/2026 01:57:11.
+        Compilaci├│n iniciada a las 9/1/2026 12:13:16.
         
-        Proyecto "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1yw72b\\cmTC_eb320.vcxproj" en nodo 1 (destinos predeterminados).
+        Proyecto "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zl48ug\\cmTC_7605e.vcxproj" en nodo 1 (destinos predeterminados).
         PrepareForBuild:
           La salida estructurada est├í habilitada. El formato del diagn├│stico del compilador reflejar├í la jerarqu├¡a de errores. Consulte https://aka.ms/cpp/structured-output para obtener m├ís detalles.
-          Creando directorio "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1yw72b\\Debug\\".
-          Creando directorio "cmTC_eb320.dir\\Debug\\cmTC_eb320.tlog\\".
+          Creando directorio "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zl48ug\\Debug\\".
+          Creando directorio "cmTC_7605e.dir\\Debug\\cmTC_7605e.tlog\\".
         InitializeBuildStatus:
-          Se crear├í "cmTC_eb320.dir\\Debug\\cmTC_eb320.tlog\\unsuccessfulbuild" porque se especific├│ "AlwaysCreate".
-          Aplicando tarea Touch a "cmTC_eb320.dir\\Debug\\cmTC_eb320.tlog\\unsuccessfulbuild".
+          Se crear├í "cmTC_7605e.dir\\Debug\\cmTC_7605e.tlog\\unsuccessfulbuild" porque se especific├│ "AlwaysCreate".
+          Aplicando tarea Touch a "cmTC_7605e.dir\\Debug\\cmTC_7605e.tlog\\unsuccessfulbuild".
         VcpkgTripletSelection:
           Using triplet "x64-windows" from "C:\\vcpkg\\installed\\x64-windows\\"
           Using normalized configuration "Debug"
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_eb320.dir\\Debug\\\\" /Fd"cmTC_eb320.dir\\Debug\\vc143.pdb" /external:W3 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_7605e.dir\\Debug\\\\" /Fd"cmTC_7605e.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp"
           Compilador de optimizaci├│n de C/C++ de Microsoft (R) versi├│n 19.44.35217 para x64
           (C) Microsoft Corporation. Todos los derechos reservados.
-          cl /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_eb320.dir\\Debug\\\\" /Fd"cmTC_eb320.dir\\Debug\\vc143.pdb" /external:W3 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_7605e.dir\\Debug\\\\" /Fd"cmTC_7605e.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp"
           CMakeCXXCompilerABI.cpp
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1yw72b\\Debug\\cmTC_eb320.exe" /INCREMENTAL /ILK:"cmTC_eb320.dir\\Debug\\cmTC_eb320.ilk" /NOLOGO /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/antigravity_dev_files/TEST CARD FILES TO COMPILE/dist/windows/source/build/CMakeFiles/CMakeScratch/TryCompile-1yw72b/Debug/cmTC_eb320.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/antigravity_dev_files/TEST CARD FILES TO COMPILE/dist/windows/source/build/CMakeFiles/CMakeScratch/TryCompile-1yw72b/Debug/cmTC_eb320.lib" /MACHINE:X64  /machine:x64 cmTC_eb320.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_eb320.vcxproj -> D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1yw72b\\Debug\\cmTC_eb320.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zl48ug\\Debug\\cmTC_7605e.exe" /INCREMENTAL /ILK:"cmTC_7605e.dir\\Debug\\cmTC_7605e.ilk" /NOLOGO /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/antigravity_dev_files/TEST CARD FILES TO COMPILE/dist/windows/source/build/CMakeFiles/CMakeScratch/TryCompile-zl48ug/Debug/cmTC_7605e.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/antigravity_dev_files/TEST CARD FILES TO COMPILE/dist/windows/source/build/CMakeFiles/CMakeScratch/TryCompile-zl48ug/Debug/cmTC_7605e.lib" /MACHINE:X64  /machine:x64 cmTC_7605e.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_7605e.vcxproj -> D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zl48ug\\Debug\\cmTC_7605e.exe
         AppLocalFromInstalled:
-          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1yw72b\\Debug\\cmTC_eb320.exe" "C:\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_eb320.dir\\Debug\\cmTC_eb320.tlog\\cmTC_eb320.write.1u.tlog" "cmTC_eb320.dir\\Debug\\vcpkg.applocal.log"
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zl48ug\\Debug\\cmTC_7605e.exe" "C:\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_7605e.dir\\Debug\\cmTC_7605e.tlog\\cmTC_7605e.write.1u.tlog" "cmTC_7605e.dir\\Debug\\vcpkg.applocal.log"
           "pwsh.exe" no se reconoce como un comando interno o externo,
           programa o archivo por lotes ejecutable.
-          El comando "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1yw72b\\Debug\\cmTC_eb320.exe" "C:\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_eb320.dir\\Debug\\cmTC_eb320.tlog\\cmTC_eb320.write.1u.tlog" "cmTC_eb320.dir\\Debug\\vcpkg.applocal.log"" sali├│ con el c├│digo 9009.
-          "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1yw72b\\Debug\\cmTC_eb320.exe" "C:\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_eb320.dir\\Debug\\cmTC_eb320.tlog\\cmTC_eb320.write.1u.tlog" "cmTC_eb320.dir\\Debug\\vcpkg.applocal.log"
+          El comando "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zl48ug\\Debug\\cmTC_7605e.exe" "C:\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_7605e.dir\\Debug\\cmTC_7605e.tlog\\cmTC_7605e.write.1u.tlog" "cmTC_7605e.dir\\Debug\\vcpkg.applocal.log"" sali├│ con el c├│digo 9009.
+          "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zl48ug\\Debug\\cmTC_7605e.exe" "C:\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_7605e.dir\\Debug\\cmTC_7605e.tlog\\cmTC_7605e.write.1u.tlog" "cmTC_7605e.dir\\Debug\\vcpkg.applocal.log"
         FinalizeBuildStatus:
-          Se eliminar├í el archivo "cmTC_eb320.dir\\Debug\\cmTC_eb320.tlog\\unsuccessfulbuild".
-          Aplicando tarea Touch a "cmTC_eb320.dir\\Debug\\cmTC_eb320.tlog\\cmTC_eb320.lastbuildstate".
-        Compilaci├│n del proyecto terminada "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1yw72b\\cmTC_eb320.vcxproj" (destinos predeterminados).
+          Se eliminar├í el archivo "cmTC_7605e.dir\\Debug\\cmTC_7605e.tlog\\unsuccessfulbuild".
+          Aplicando tarea Touch a "cmTC_7605e.dir\\Debug\\cmTC_7605e.tlog\\cmTC_7605e.lastbuildstate".
+        Compilaci├│n del proyecto terminada "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zl48ug\\cmTC_7605e.vcxproj" (destinos predeterminados).
         
         Compilaci├│n correcta.
             0 Advertencia(s)
             0 Errores
         
-        Tiempo transcurrido 00:00:00.74
+        Tiempo transcurrido 00:00:00.77
         
       exitCode: 0
   -
@@ -1140,15 +1140,15 @@ events:
       - "C:/Qt/6.8.3/msvc2022_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:36 (find_dependency)"
       - "C:/Qt/6.8.3/msvc2022_64/lib/cmake/Qt6/Qt6Dependencies.cmake:34 (_qt_internal_find_third_party_dependencies)"
       - "C:/Qt/6.8.3/msvc2022_64/lib/cmake/Qt6/Qt6Config.cmake:146 (include)"
-      - "CMakeLists.txt:58 (find_package)"
+      - "CMakeLists.txt:68 (find_package)"
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "D:/antigravity_dev_files/TEST CARD FILES TO COMPILE/dist/windows/source/build/CMakeFiles/CMakeScratch/TryCompile-xvaw52"
-      binary: "D:/antigravity_dev_files/TEST CARD FILES TO COMPILE/dist/windows/source/build/CMakeFiles/CMakeScratch/TryCompile-xvaw52"
+      source: "D:/antigravity_dev_files/TEST CARD FILES TO COMPILE/dist/windows/source/build/CMakeFiles/CMakeScratch/TryCompile-12trgv"
+      binary: "D:/antigravity_dev_files/TEST CARD FILES TO COMPILE/dist/windows/source/build/CMakeFiles/CMakeScratch/TryCompile-12trgv"
     cmakeVariables:
-      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
-      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
       CMAKE_MODULE_PATH: "C:/Qt/6.8.3/msvc2022_64/lib/cmake/Qt6;C:/Qt/6.8.3/msvc2022_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;C:/Qt/6.8.3/msvc2022_64/lib/cmake/Qt6/3rdparty/kwin"
       CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded"
@@ -1156,42 +1156,42 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: 'D:/antigravity_dev_files/TEST CARD FILES TO COMPILE/dist/windows/source/build/CMakeFiles/CMakeScratch/TryCompile-xvaw52'
+        Change Dir: 'D:/antigravity_dev_files/TEST CARD FILES TO COMPILE/dist/windows/source/build/CMakeFiles/CMakeScratch/TryCompile-12trgv'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_65863.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_e2bcc.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         Versi├│n de MSBuild 17.14.23+b0019275e para .NET Framework
-        Compilaci├│n iniciada a las 9/1/2026 01:57:12.
+        Compilaci├│n iniciada a las 9/1/2026 12:13:17.
         
-        Proyecto "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xvaw52\\cmTC_65863.vcxproj" en nodo 1 (destinos predeterminados).
+        Proyecto "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-12trgv\\cmTC_e2bcc.vcxproj" en nodo 1 (destinos predeterminados).
         PrepareForBuild:
           La salida estructurada est├í habilitada. El formato del diagn├│stico del compilador reflejar├í la jerarqu├¡a de errores. Consulte https://aka.ms/cpp/structured-output para obtener m├ís detalles.
-          Creando directorio "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xvaw52\\Debug\\".
-          Creando directorio "cmTC_65863.dir\\Debug\\cmTC_65863.tlog\\".
+          Creando directorio "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-12trgv\\Debug\\".
+          Creando directorio "cmTC_e2bcc.dir\\Debug\\cmTC_e2bcc.tlog\\".
         InitializeBuildStatus:
-          Se crear├í "cmTC_65863.dir\\Debug\\cmTC_65863.tlog\\unsuccessfulbuild" porque se especific├│ "AlwaysCreate".
-          Aplicando tarea Touch a "cmTC_65863.dir\\Debug\\cmTC_65863.tlog\\unsuccessfulbuild".
+          Se crear├í "cmTC_e2bcc.dir\\Debug\\cmTC_e2bcc.tlog\\unsuccessfulbuild" porque se especific├│ "AlwaysCreate".
+          Aplicando tarea Touch a "cmTC_e2bcc.dir\\Debug\\cmTC_e2bcc.tlog\\unsuccessfulbuild".
         VcpkgTripletSelection:
           Using triplet "x64-windows" from "C:\\vcpkg\\installed\\x64-windows\\"
-          Using normalized configuration "Debug"
+          Using normalized configuration "Release"
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /std:c11 /Fo"cmTC_65863.dir\\Debug\\\\" /Fd"cmTC_65863.dir\\Debug\\vc143.pdb" /external:W3 /TC /errorReport:queue "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xvaw52\\src.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MT /std:c11 /Fo"cmTC_e2bcc.dir\\Debug\\\\" /Fd"cmTC_e2bcc.dir\\Debug\\vc143.pdb" /external:W1 /TC /errorReport:queue "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-12trgv\\src.c"
           Compilador de optimizaci├│n de C/C++ de Microsoft (R) versi├│n 19.44.35217 para x64
           (C) Microsoft Corporation. Todos los derechos reservados.
-          cl /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /std:c11 /Fo"cmTC_65863.dir\\Debug\\\\" /Fd"cmTC_65863.dir\\Debug\\vc143.pdb" /external:W3 /TC /errorReport:queue "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xvaw52\\src.c"
+          cl /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MT /std:c11 /Fo"cmTC_e2bcc.dir\\Debug\\\\" /Fd"cmTC_e2bcc.dir\\Debug\\vc143.pdb" /external:W1 /TC /errorReport:queue "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-12trgv\\src.c"
           src.c
-        D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xvaw52\\src.c(1,1): error C1083: No se puede abrir el archivo incluir: 'pthread.h': No such file or directory [D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xvaw52\\cmTC_65863.vcxproj]
-        Compilaci├│n del proyecto terminada "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xvaw52\\cmTC_65863.vcxproj" (destinos predeterminados) -- ERROR.
+        D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-12trgv\\src.c(1,1): error C1083: No se puede abrir el archivo incluir: 'pthread.h': No such file or directory [D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-12trgv\\cmTC_e2bcc.vcxproj]
+        Compilaci├│n del proyecto terminada "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-12trgv\\cmTC_e2bcc.vcxproj" (destinos predeterminados) -- ERROR.
         
         ERROR al compilar.
         
-        "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xvaw52\\cmTC_65863.vcxproj" (destino predeterminado) (1) ->
+        "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-12trgv\\cmTC_e2bcc.vcxproj" (destino predeterminado) (1) ->
         (ClCompile destino) -> 
-          D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xvaw52\\src.c(1,1): error C1083: No se puede abrir el archivo incluir: 'pthread.h': No such file or directory [D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xvaw52\\cmTC_65863.vcxproj]
+          D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-12trgv\\src.c(1,1): error C1083: No se puede abrir el archivo incluir: 'pthread.h': No such file or directory [D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-12trgv\\cmTC_e2bcc.vcxproj]
         
             0 Advertencia(s)
             1 Errores
         
-        Tiempo transcurrido 00:00:00.25
+        Tiempo transcurrido 00:00:00.28
         
       exitCode: 1
   -
@@ -1205,15 +1205,15 @@ events:
       - "C:/Qt/6.8.3/msvc2022_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:36 (find_dependency)"
       - "C:/Qt/6.8.3/msvc2022_64/lib/cmake/Qt6/Qt6Dependencies.cmake:34 (_qt_internal_find_third_party_dependencies)"
       - "C:/Qt/6.8.3/msvc2022_64/lib/cmake/Qt6/Qt6Config.cmake:146 (include)"
-      - "CMakeLists.txt:58 (find_package)"
+      - "CMakeLists.txt:68 (find_package)"
     checks:
       - "Looking for pthread_create in pthreads"
     directories:
-      source: "D:/antigravity_dev_files/TEST CARD FILES TO COMPILE/dist/windows/source/build/CMakeFiles/CMakeScratch/TryCompile-8tluoo"
-      binary: "D:/antigravity_dev_files/TEST CARD FILES TO COMPILE/dist/windows/source/build/CMakeFiles/CMakeScratch/TryCompile-8tluoo"
+      source: "D:/antigravity_dev_files/TEST CARD FILES TO COMPILE/dist/windows/source/build/CMakeFiles/CMakeScratch/TryCompile-pi1hy7"
+      binary: "D:/antigravity_dev_files/TEST CARD FILES TO COMPILE/dist/windows/source/build/CMakeFiles/CMakeScratch/TryCompile-pi1hy7"
     cmakeVariables:
-      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
-      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
       CMAKE_MODULE_PATH: "C:/Qt/6.8.3/msvc2022_64/lib/cmake/Qt6;C:/Qt/6.8.3/msvc2022_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;C:/Qt/6.8.3/msvc2022_64/lib/cmake/Qt6/3rdparty/kwin"
       CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded"
@@ -1221,39 +1221,39 @@ events:
       variable: "CMAKE_HAVE_PTHREADS_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'D:/antigravity_dev_files/TEST CARD FILES TO COMPILE/dist/windows/source/build/CMakeFiles/CMakeScratch/TryCompile-8tluoo'
+        Change Dir: 'D:/antigravity_dev_files/TEST CARD FILES TO COMPILE/dist/windows/source/build/CMakeFiles/CMakeScratch/TryCompile-pi1hy7'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_1bddc.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_d4eb7.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         Versi├│n de MSBuild 17.14.23+b0019275e para .NET Framework
-        Compilaci├│n iniciada a las 9/1/2026 01:57:12.
+        Compilaci├│n iniciada a las 9/1/2026 12:13:18.
         
-        Proyecto "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-8tluoo\\cmTC_1bddc.vcxproj" en nodo 1 (destinos predeterminados).
+        Proyecto "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pi1hy7\\cmTC_d4eb7.vcxproj" en nodo 1 (destinos predeterminados).
         PrepareForBuild:
           La salida estructurada est├í habilitada. El formato del diagn├│stico del compilador reflejar├í la jerarqu├¡a de errores. Consulte https://aka.ms/cpp/structured-output para obtener m├ís detalles.
-          Creando directorio "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-8tluoo\\Debug\\".
-          Creando directorio "cmTC_1bddc.dir\\Debug\\cmTC_1bddc.tlog\\".
+          Creando directorio "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pi1hy7\\Debug\\".
+          Creando directorio "cmTC_d4eb7.dir\\Debug\\cmTC_d4eb7.tlog\\".
         InitializeBuildStatus:
-          Se crear├í "cmTC_1bddc.dir\\Debug\\cmTC_1bddc.tlog\\unsuccessfulbuild" porque se especific├│ "AlwaysCreate".
-          Aplicando tarea Touch a "cmTC_1bddc.dir\\Debug\\cmTC_1bddc.tlog\\unsuccessfulbuild".
+          Se crear├í "cmTC_d4eb7.dir\\Debug\\cmTC_d4eb7.tlog\\unsuccessfulbuild" porque se especific├│ "AlwaysCreate".
+          Aplicando tarea Touch a "cmTC_d4eb7.dir\\Debug\\cmTC_d4eb7.tlog\\unsuccessfulbuild".
         VcpkgTripletSelection:
           Using triplet "x64-windows" from "C:\\vcpkg\\installed\\x64-windows\\"
-          Using normalized configuration "Debug"
+          Using normalized configuration "Release"
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /std:c11 /Fo"cmTC_1bddc.dir\\Debug\\\\" /Fd"cmTC_1bddc.dir\\Debug\\vc143.pdb" /external:W3 /TC /errorReport:queue "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-8tluoo\\CheckFunctionExists.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MT /std:c11 /Fo"cmTC_d4eb7.dir\\Debug\\\\" /Fd"cmTC_d4eb7.dir\\Debug\\vc143.pdb" /external:W1 /TC /errorReport:queue "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pi1hy7\\CheckFunctionExists.c"
           Compilador de optimizaci├│n de C/C++ de Microsoft (R) versi├│n 19.44.35217 para x64
           (C) Microsoft Corporation. Todos los derechos reservados.
-          cl /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /std:c11 /Fo"cmTC_1bddc.dir\\Debug\\\\" /Fd"cmTC_1bddc.dir\\Debug\\vc143.pdb" /external:W3 /TC /errorReport:queue "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-8tluoo\\CheckFunctionExists.c"
+          cl /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MT /std:c11 /Fo"cmTC_d4eb7.dir\\Debug\\\\" /Fd"cmTC_d4eb7.dir\\Debug\\vc143.pdb" /external:W1 /TC /errorReport:queue "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pi1hy7\\CheckFunctionExists.c"
           CheckFunctionExists.c
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-8tluoo\\Debug\\cmTC_1bddc.exe" /INCREMENTAL /ILK:"cmTC_1bddc.dir\\Debug\\cmTC_1bddc.ilk" /NOLOGO /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/antigravity_dev_files/TEST CARD FILES TO COMPILE/dist/windows/source/build/CMakeFiles/CMakeScratch/TryCompile-8tluoo/Debug/cmTC_1bddc.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/antigravity_dev_files/TEST CARD FILES TO COMPILE/dist/windows/source/build/CMakeFiles/CMakeScratch/TryCompile-8tluoo/Debug/cmTC_1bddc.lib" /MACHINE:X64  /machine:x64 cmTC_1bddc.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: no se puede abrir el archivo 'pthreads.lib' [D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-8tluoo\\cmTC_1bddc.vcxproj]
-        Compilaci├│n del proyecto terminada "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-8tluoo\\cmTC_1bddc.vcxproj" (destinos predeterminados) -- ERROR.
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pi1hy7\\Debug\\cmTC_d4eb7.exe" /INCREMENTAL /ILK:"cmTC_d4eb7.dir\\Debug\\cmTC_d4eb7.ilk" /NOLOGO /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\lib\\manual-link" pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/antigravity_dev_files/TEST CARD FILES TO COMPILE/dist/windows/source/build/CMakeFiles/CMakeScratch/TryCompile-pi1hy7/Debug/cmTC_d4eb7.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/antigravity_dev_files/TEST CARD FILES TO COMPILE/dist/windows/source/build/CMakeFiles/CMakeScratch/TryCompile-pi1hy7/Debug/cmTC_d4eb7.lib" /MACHINE:X64  /machine:x64 cmTC_d4eb7.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: no se puede abrir el archivo 'pthreads.lib' [D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pi1hy7\\cmTC_d4eb7.vcxproj]
+        Compilaci├│n del proyecto terminada "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pi1hy7\\cmTC_d4eb7.vcxproj" (destinos predeterminados) -- ERROR.
         
         ERROR al compilar.
         
-        "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-8tluoo\\cmTC_1bddc.vcxproj" (destino predeterminado) (1) ->
+        "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pi1hy7\\cmTC_d4eb7.vcxproj" (destino predeterminado) (1) ->
         (Link destino) -> 
-          LINK : fatal error LNK1104: no se puede abrir el archivo 'pthreads.lib' [D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-8tluoo\\cmTC_1bddc.vcxproj]
+          LINK : fatal error LNK1104: no se puede abrir el archivo 'pthreads.lib' [D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pi1hy7\\cmTC_d4eb7.vcxproj]
         
             0 Advertencia(s)
             1 Errores
@@ -1272,15 +1272,15 @@ events:
       - "C:/Qt/6.8.3/msvc2022_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:36 (find_dependency)"
       - "C:/Qt/6.8.3/msvc2022_64/lib/cmake/Qt6/Qt6Dependencies.cmake:34 (_qt_internal_find_third_party_dependencies)"
       - "C:/Qt/6.8.3/msvc2022_64/lib/cmake/Qt6/Qt6Config.cmake:146 (include)"
-      - "CMakeLists.txt:58 (find_package)"
+      - "CMakeLists.txt:68 (find_package)"
     checks:
       - "Looking for pthread_create in pthread"
     directories:
-      source: "D:/antigravity_dev_files/TEST CARD FILES TO COMPILE/dist/windows/source/build/CMakeFiles/CMakeScratch/TryCompile-2zb06u"
-      binary: "D:/antigravity_dev_files/TEST CARD FILES TO COMPILE/dist/windows/source/build/CMakeFiles/CMakeScratch/TryCompile-2zb06u"
+      source: "D:/antigravity_dev_files/TEST CARD FILES TO COMPILE/dist/windows/source/build/CMakeFiles/CMakeScratch/TryCompile-tnorzn"
+      binary: "D:/antigravity_dev_files/TEST CARD FILES TO COMPILE/dist/windows/source/build/CMakeFiles/CMakeScratch/TryCompile-tnorzn"
     cmakeVariables:
-      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
-      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
       CMAKE_MODULE_PATH: "C:/Qt/6.8.3/msvc2022_64/lib/cmake/Qt6;C:/Qt/6.8.3/msvc2022_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;C:/Qt/6.8.3/msvc2022_64/lib/cmake/Qt6/3rdparty/kwin"
       CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded"
@@ -1288,44 +1288,44 @@ events:
       variable: "CMAKE_HAVE_PTHREAD_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'D:/antigravity_dev_files/TEST CARD FILES TO COMPILE/dist/windows/source/build/CMakeFiles/CMakeScratch/TryCompile-2zb06u'
+        Change Dir: 'D:/antigravity_dev_files/TEST CARD FILES TO COMPILE/dist/windows/source/build/CMakeFiles/CMakeScratch/TryCompile-tnorzn'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_1c8ae.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_b6128.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         Versi├│n de MSBuild 17.14.23+b0019275e para .NET Framework
-        Compilaci├│n iniciada a las 9/1/2026 01:57:12.
+        Compilaci├│n iniciada a las 9/1/2026 12:13:18.
         
-        Proyecto "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2zb06u\\cmTC_1c8ae.vcxproj" en nodo 1 (destinos predeterminados).
+        Proyecto "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tnorzn\\cmTC_b6128.vcxproj" en nodo 1 (destinos predeterminados).
         PrepareForBuild:
           La salida estructurada est├í habilitada. El formato del diagn├│stico del compilador reflejar├í la jerarqu├¡a de errores. Consulte https://aka.ms/cpp/structured-output para obtener m├ís detalles.
-          Creando directorio "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2zb06u\\Debug\\".
-          Creando directorio "cmTC_1c8ae.dir\\Debug\\cmTC_1c8ae.tlog\\".
+          Creando directorio "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tnorzn\\Debug\\".
+          Creando directorio "cmTC_b6128.dir\\Debug\\cmTC_b6128.tlog\\".
         InitializeBuildStatus:
-          Se crear├í "cmTC_1c8ae.dir\\Debug\\cmTC_1c8ae.tlog\\unsuccessfulbuild" porque se especific├│ "AlwaysCreate".
-          Aplicando tarea Touch a "cmTC_1c8ae.dir\\Debug\\cmTC_1c8ae.tlog\\unsuccessfulbuild".
+          Se crear├í "cmTC_b6128.dir\\Debug\\cmTC_b6128.tlog\\unsuccessfulbuild" porque se especific├│ "AlwaysCreate".
+          Aplicando tarea Touch a "cmTC_b6128.dir\\Debug\\cmTC_b6128.tlog\\unsuccessfulbuild".
         VcpkgTripletSelection:
           Using triplet "x64-windows" from "C:\\vcpkg\\installed\\x64-windows\\"
-          Using normalized configuration "Debug"
+          Using normalized configuration "Release"
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /std:c11 /Fo"cmTC_1c8ae.dir\\Debug\\\\" /Fd"cmTC_1c8ae.dir\\Debug\\vc143.pdb" /external:W3 /TC /errorReport:queue "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2zb06u\\CheckFunctionExists.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MT /std:c11 /Fo"cmTC_b6128.dir\\Debug\\\\" /Fd"cmTC_b6128.dir\\Debug\\vc143.pdb" /external:W1 /TC /errorReport:queue "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tnorzn\\CheckFunctionExists.c"
           Compilador de optimizaci├│n de C/C++ de Microsoft (R) versi├│n 19.44.35217 para x64
           (C) Microsoft Corporation. Todos los derechos reservados.
-          cl /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /std:c11 /Fo"cmTC_1c8ae.dir\\Debug\\\\" /Fd"cmTC_1c8ae.dir\\Debug\\vc143.pdb" /external:W3 /TC /errorReport:queue "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2zb06u\\CheckFunctionExists.c"
+          cl /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MT /std:c11 /Fo"cmTC_b6128.dir\\Debug\\\\" /Fd"cmTC_b6128.dir\\Debug\\vc143.pdb" /external:W1 /TC /errorReport:queue "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tnorzn\\CheckFunctionExists.c"
           CheckFunctionExists.c
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2zb06u\\Debug\\cmTC_1c8ae.exe" /INCREMENTAL /ILK:"cmTC_1c8ae.dir\\Debug\\cmTC_1c8ae.ilk" /NOLOGO /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/antigravity_dev_files/TEST CARD FILES TO COMPILE/dist/windows/source/build/CMakeFiles/CMakeScratch/TryCompile-2zb06u/Debug/cmTC_1c8ae.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/antigravity_dev_files/TEST CARD FILES TO COMPILE/dist/windows/source/build/CMakeFiles/CMakeScratch/TryCompile-2zb06u/Debug/cmTC_1c8ae.lib" /MACHINE:X64  /machine:x64 cmTC_1c8ae.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: no se puede abrir el archivo 'pthread.lib' [D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2zb06u\\cmTC_1c8ae.vcxproj]
-        Compilaci├│n del proyecto terminada "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2zb06u\\cmTC_1c8ae.vcxproj" (destinos predeterminados) -- ERROR.
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tnorzn\\Debug\\cmTC_b6128.exe" /INCREMENTAL /ILK:"cmTC_b6128.dir\\Debug\\cmTC_b6128.ilk" /NOLOGO /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\lib\\manual-link" pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/antigravity_dev_files/TEST CARD FILES TO COMPILE/dist/windows/source/build/CMakeFiles/CMakeScratch/TryCompile-tnorzn/Debug/cmTC_b6128.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/antigravity_dev_files/TEST CARD FILES TO COMPILE/dist/windows/source/build/CMakeFiles/CMakeScratch/TryCompile-tnorzn/Debug/cmTC_b6128.lib" /MACHINE:X64  /machine:x64 cmTC_b6128.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: no se puede abrir el archivo 'pthread.lib' [D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tnorzn\\cmTC_b6128.vcxproj]
+        Compilaci├│n del proyecto terminada "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tnorzn\\cmTC_b6128.vcxproj" (destinos predeterminados) -- ERROR.
         
         ERROR al compilar.
         
-        "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2zb06u\\cmTC_1c8ae.vcxproj" (destino predeterminado) (1) ->
+        "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tnorzn\\cmTC_b6128.vcxproj" (destino predeterminado) (1) ->
         (Link destino) -> 
-          LINK : fatal error LNK1104: no se puede abrir el archivo 'pthread.lib' [D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2zb06u\\cmTC_1c8ae.vcxproj]
+          LINK : fatal error LNK1104: no se puede abrir el archivo 'pthread.lib' [D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-tnorzn\\cmTC_b6128.vcxproj]
         
             0 Advertencia(s)
             1 Errores
         
-        Tiempo transcurrido 00:00:00.37
+        Tiempo transcurrido 00:00:00.31
         
       exitCode: 1
   -
@@ -1338,7 +1338,7 @@ events:
       - "C:/Qt/6.8.3/msvc2022_64/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake:39 (_qt_internal_find_tool_dependencies)"
       - "C:/Qt/6.8.3/msvc2022_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake:43 (include)"
       - "C:/Qt/6.8.3/msvc2022_64/lib/cmake/Qt6/Qt6Config.cmake:196 (find_package)"
-      - "CMakeLists.txt:58 (find_package)"
+      - "CMakeLists.txt:68 (find_package)"
     name: "Qt6CoreTools"
     configs:
       -
@@ -1432,7 +1432,7 @@ events:
       - "C:/Qt/6.8.3/msvc2022_64/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake:39 (_qt_internal_find_tool_dependencies)"
       - "C:/Qt/6.8.3/msvc2022_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake:43 (include)"
       - "C:/Qt/6.8.3/msvc2022_64/lib/cmake/Qt6/Qt6Config.cmake:196 (find_package)"
-      - "CMakeLists.txt:58 (find_package)"
+      - "CMakeLists.txt:68 (find_package)"
     name: "Qt6GuiTools"
     configs:
       -
@@ -1523,7 +1523,7 @@ events:
       - "C:/Qt/6.8.3/msvc2022_64/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake:39 (_qt_internal_find_tool_dependencies)"
       - "C:/Qt/6.8.3/msvc2022_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake:43 (include)"
       - "C:/Qt/6.8.3/msvc2022_64/lib/cmake/Qt6/Qt6Config.cmake:196 (find_package)"
-      - "CMakeLists.txt:58 (find_package)"
+      - "CMakeLists.txt:68 (find_package)"
     name: "Qt6WidgetsTools"
     configs:
       -
@@ -1624,15 +1624,15 @@ events:
       - "C:/Qt/6.8.3/msvc2022_64/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake:45 (_qt_internal_find_qt_dependencies)"
       - "C:/Qt/6.8.3/msvc2022_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake:43 (include)"
       - "C:/Qt/6.8.3/msvc2022_64/lib/cmake/Qt6/Qt6Config.cmake:196 (find_package)"
-      - "CMakeLists.txt:58 (find_package)"
+      - "CMakeLists.txt:68 (find_package)"
     checks:
       - "Performing Test HAVE_STDATOMIC"
     directories:
-      source: "D:/antigravity_dev_files/TEST CARD FILES TO COMPILE/dist/windows/source/build/CMakeFiles/CMakeScratch/TryCompile-unxvoa"
-      binary: "D:/antigravity_dev_files/TEST CARD FILES TO COMPILE/dist/windows/source/build/CMakeFiles/CMakeScratch/TryCompile-unxvoa"
+      source: "D:/antigravity_dev_files/TEST CARD FILES TO COMPILE/dist/windows/source/build/CMakeFiles/CMakeScratch/TryCompile-3knyvz"
+      binary: "D:/antigravity_dev_files/TEST CARD FILES TO COMPILE/dist/windows/source/build/CMakeFiles/CMakeScratch/TryCompile-3knyvz"
     cmakeVariables:
-      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
-      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
       CMAKE_MODULE_PATH: "C:/Qt/6.8.3/msvc2022_64/lib/cmake/Qt6;C:/Qt/6.8.3/msvc2022_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;C:/Qt/6.8.3/msvc2022_64/lib/cmake/Qt6/3rdparty/kwin"
       CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreaded"
@@ -1640,48 +1640,48 @@ events:
       variable: "HAVE_STDATOMIC"
       cached: true
       stdout: |
-        Change Dir: 'D:/antigravity_dev_files/TEST CARD FILES TO COMPILE/dist/windows/source/build/CMakeFiles/CMakeScratch/TryCompile-unxvoa'
+        Change Dir: 'D:/antigravity_dev_files/TEST CARD FILES TO COMPILE/dist/windows/source/build/CMakeFiles/CMakeScratch/TryCompile-3knyvz'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_c65b3.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_103b2.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         Versi├│n de MSBuild 17.14.23+b0019275e para .NET Framework
-        Compilaci├│n iniciada a las 9/1/2026 01:57:13.
+        Compilaci├│n iniciada a las 9/1/2026 12:13:19.
         
-        Proyecto "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-unxvoa\\cmTC_c65b3.vcxproj" en nodo 1 (destinos predeterminados).
+        Proyecto "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3knyvz\\cmTC_103b2.vcxproj" en nodo 1 (destinos predeterminados).
         PrepareForBuild:
           La salida estructurada est├í habilitada. El formato del diagn├│stico del compilador reflejar├í la jerarqu├¡a de errores. Consulte https://aka.ms/cpp/structured-output para obtener m├ís detalles.
-          Creando directorio "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-unxvoa\\Debug\\".
-          Creando directorio "cmTC_c65b3.dir\\Debug\\cmTC_c65b3.tlog\\".
+          Creando directorio "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3knyvz\\Debug\\".
+          Creando directorio "cmTC_103b2.dir\\Debug\\cmTC_103b2.tlog\\".
         InitializeBuildStatus:
-          Se crear├í "cmTC_c65b3.dir\\Debug\\cmTC_c65b3.tlog\\unsuccessfulbuild" porque se especific├│ "AlwaysCreate".
-          Aplicando tarea Touch a "cmTC_c65b3.dir\\Debug\\cmTC_c65b3.tlog\\unsuccessfulbuild".
+          Se crear├í "cmTC_103b2.dir\\Debug\\cmTC_103b2.tlog\\unsuccessfulbuild" porque se especific├│ "AlwaysCreate".
+          Aplicando tarea Touch a "cmTC_103b2.dir\\Debug\\cmTC_103b2.tlog\\unsuccessfulbuild".
         VcpkgTripletSelection:
           Using triplet "x64-windows" from "C:\\vcpkg\\installed\\x64-windows\\"
-          Using normalized configuration "Debug"
+          Using normalized configuration "Release"
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_STDATOMIC /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /std:c++17 /Fo"cmTC_c65b3.dir\\Debug\\\\" /Fd"cmTC_c65b3.dir\\Debug\\vc143.pdb" /external:W3 /TP /errorReport:queue "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-unxvoa\\src.cxx"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_STDATOMIC /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MT /GR /std:c++17 /Fo"cmTC_103b2.dir\\Debug\\\\" /Fd"cmTC_103b2.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3knyvz\\src.cxx"
           Compilador de optimizaci├│n de C/C++ de Microsoft (R) versi├│n 19.44.35217 para x64
           (C) Microsoft Corporation. Todos los derechos reservados.
-          cl /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_STDATOMIC /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /std:c++17 /Fo"cmTC_c65b3.dir\\Debug\\\\" /Fd"cmTC_c65b3.dir\\Debug\\vc143.pdb" /external:W3 /TP /errorReport:queue "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-unxvoa\\src.cxx"
+          cl /c /I"C:\\vcpkg\\installed\\x64-windows\\include" /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_STDATOMIC /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MT /GR /std:c++17 /Fo"cmTC_103b2.dir\\Debug\\\\" /Fd"cmTC_103b2.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3knyvz\\src.cxx"
           src.cxx
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-unxvoa\\Debug\\cmTC_c65b3.exe" /INCREMENTAL /ILK:"cmTC_c65b3.dir\\Debug\\cmTC_c65b3.ilk" /NOLOGO /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/antigravity_dev_files/TEST CARD FILES TO COMPILE/dist/windows/source/build/CMakeFiles/CMakeScratch/TryCompile-unxvoa/Debug/cmTC_c65b3.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/antigravity_dev_files/TEST CARD FILES TO COMPILE/dist/windows/source/build/CMakeFiles/CMakeScratch/TryCompile-unxvoa/Debug/cmTC_c65b3.lib" /MACHINE:X64  /machine:x64 cmTC_c65b3.dir\\Debug\\src.obj
-          cmTC_c65b3.vcxproj -> D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-unxvoa\\Debug\\cmTC_c65b3.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3knyvz\\Debug\\cmTC_103b2.exe" /INCREMENTAL /ILK:"cmTC_103b2.dir\\Debug\\cmTC_103b2.ilk" /NOLOGO /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\lib" /LIBPATH:"C:\\vcpkg\\installed\\x64-windows\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\vcpkg\\installed\\x64-windows\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/antigravity_dev_files/TEST CARD FILES TO COMPILE/dist/windows/source/build/CMakeFiles/CMakeScratch/TryCompile-3knyvz/Debug/cmTC_103b2.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/antigravity_dev_files/TEST CARD FILES TO COMPILE/dist/windows/source/build/CMakeFiles/CMakeScratch/TryCompile-3knyvz/Debug/cmTC_103b2.lib" /MACHINE:X64  /machine:x64 cmTC_103b2.dir\\Debug\\src.obj
+          cmTC_103b2.vcxproj -> D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3knyvz\\Debug\\cmTC_103b2.exe
         AppLocalFromInstalled:
-          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-unxvoa\\Debug\\cmTC_c65b3.exe" "C:\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_c65b3.dir\\Debug\\cmTC_c65b3.tlog\\cmTC_c65b3.write.1u.tlog" "cmTC_c65b3.dir\\Debug\\vcpkg.applocal.log"
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3knyvz\\Debug\\cmTC_103b2.exe" "C:\\vcpkg\\installed\\x64-windows\\bin" "cmTC_103b2.dir\\Debug\\cmTC_103b2.tlog\\cmTC_103b2.write.1u.tlog" "cmTC_103b2.dir\\Debug\\vcpkg.applocal.log"
           "pwsh.exe" no se reconoce como un comando interno o externo,
           programa o archivo por lotes ejecutable.
-          El comando "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-unxvoa\\Debug\\cmTC_c65b3.exe" "C:\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_c65b3.dir\\Debug\\cmTC_c65b3.tlog\\cmTC_c65b3.write.1u.tlog" "cmTC_c65b3.dir\\Debug\\vcpkg.applocal.log"" sali├│ con el c├│digo 9009.
-          "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-unxvoa\\Debug\\cmTC_c65b3.exe" "C:\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_c65b3.dir\\Debug\\cmTC_c65b3.tlog\\cmTC_c65b3.write.1u.tlog" "cmTC_c65b3.dir\\Debug\\vcpkg.applocal.log"
+          El comando "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3knyvz\\Debug\\cmTC_103b2.exe" "C:\\vcpkg\\installed\\x64-windows\\bin" "cmTC_103b2.dir\\Debug\\cmTC_103b2.tlog\\cmTC_103b2.write.1u.tlog" "cmTC_103b2.dir\\Debug\\vcpkg.applocal.log"" sali├│ con el c├│digo 9009.
+          "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3knyvz\\Debug\\cmTC_103b2.exe" "C:\\vcpkg\\installed\\x64-windows\\bin" "cmTC_103b2.dir\\Debug\\cmTC_103b2.tlog\\cmTC_103b2.write.1u.tlog" "cmTC_103b2.dir\\Debug\\vcpkg.applocal.log"
         FinalizeBuildStatus:
-          Se eliminar├í el archivo "cmTC_c65b3.dir\\Debug\\cmTC_c65b3.tlog\\unsuccessfulbuild".
-          Aplicando tarea Touch a "cmTC_c65b3.dir\\Debug\\cmTC_c65b3.tlog\\cmTC_c65b3.lastbuildstate".
-        Compilaci├│n del proyecto terminada "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-unxvoa\\cmTC_c65b3.vcxproj" (destinos predeterminados).
+          Se eliminar├í el archivo "cmTC_103b2.dir\\Debug\\cmTC_103b2.tlog\\unsuccessfulbuild".
+          Aplicando tarea Touch a "cmTC_103b2.dir\\Debug\\cmTC_103b2.tlog\\cmTC_103b2.lastbuildstate".
+        Compilaci├│n del proyecto terminada "D:\\antigravity_dev_files\\TEST CARD FILES TO COMPILE\\dist\\windows\\source\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3knyvz\\cmTC_103b2.vcxproj" (destinos predeterminados).
         
         Compilaci├│n correcta.
             0 Advertencia(s)
             0 Errores
         
-        Tiempo transcurrido 00:00:00.80
+        Tiempo transcurrido 00:00:01.38
         
       exitCode: 0
   -
@@ -1698,7 +1698,7 @@ events:
       - "C:/Qt/6.8.3/msvc2022_64/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake:45 (_qt_internal_find_qt_dependencies)"
       - "C:/Qt/6.8.3/msvc2022_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake:43 (include)"
       - "C:/Qt/6.8.3/msvc2022_64/lib/cmake/Qt6/Qt6Config.cmake:196 (find_package)"
-      - "CMakeLists.txt:58 (find_package)"
+      - "CMakeLists.txt:68 (find_package)"
     name: "Qt6ZlibPrivate"
     configs:
       -
@@ -1827,7 +1827,7 @@ events:
       - "C:/Qt/6.8.3/msvc2022_64/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake:45 (_qt_internal_find_qt_dependencies)"
       - "C:/Qt/6.8.3/msvc2022_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake:43 (include)"
       - "C:/Qt/6.8.3/msvc2022_64/lib/cmake/Qt6/Qt6Config.cmake:196 (find_package)"
-      - "CMakeLists.txt:58 (find_package)"
+      - "CMakeLists.txt:68 (find_package)"
     name: "Qt6EntryPointPrivate"
     configs:
       -
@@ -1954,7 +1954,7 @@ events:
       - "C:/Qt/6.8.3/msvc2022_64/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake:45 (_qt_internal_find_qt_dependencies)"
       - "C:/Qt/6.8.3/msvc2022_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake:43 (include)"
       - "C:/Qt/6.8.3/msvc2022_64/lib/cmake/Qt6/Qt6Config.cmake:196 (find_package)"
-      - "CMakeLists.txt:58 (find_package)"
+      - "CMakeLists.txt:68 (find_package)"
     mode: "program"
     variable: "WINDEPLOYQT_EXECUTABLE"
     description: "Path to a program."
@@ -2041,7 +2041,7 @@ events:
       - "C:/Qt/6.8.3/msvc2022_64/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake:45 (_qt_internal_find_qt_dependencies)"
       - "C:/Qt/6.8.3/msvc2022_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake:43 (include)"
       - "C:/Qt/6.8.3/msvc2022_64/lib/cmake/Qt6/Qt6Config.cmake:196 (find_package)"
-      - "CMakeLists.txt:58 (find_package)"
+      - "CMakeLists.txt:68 (find_package)"
     name: "Qt6Core"
     configs:
       -
@@ -2155,7 +2155,7 @@ events:
       - "C:/Qt/6.8.3/msvc2022_64/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake:45 (_qt_internal_find_qt_dependencies)"
       - "C:/Qt/6.8.3/msvc2022_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake:43 (include)"
       - "C:/Qt/6.8.3/msvc2022_64/lib/cmake/Qt6/Qt6Config.cmake:196 (find_package)"
-      - "CMakeLists.txt:58 (find_package)"
+      - "CMakeLists.txt:68 (find_package)"
     mode: "path"
     variable: "Vulkan_INCLUDE_DIR"
     description: "Path to a file."
@@ -2269,7 +2269,7 @@ events:
       - "C:/Qt/6.8.3/msvc2022_64/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake:45 (_qt_internal_find_qt_dependencies)"
       - "C:/Qt/6.8.3/msvc2022_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake:43 (include)"
       - "C:/Qt/6.8.3/msvc2022_64/lib/cmake/Qt6/Qt6Config.cmake:196 (find_package)"
-      - "CMakeLists.txt:58 (find_package)"
+      - "CMakeLists.txt:68 (find_package)"
     mode: "library"
     variable: "Vulkan_LIBRARY"
     description: "Path to a library."
@@ -2391,7 +2391,7 @@ events:
       - "C:/Qt/6.8.3/msvc2022_64/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake:45 (_qt_internal_find_qt_dependencies)"
       - "C:/Qt/6.8.3/msvc2022_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake:43 (include)"
       - "C:/Qt/6.8.3/msvc2022_64/lib/cmake/Qt6/Qt6Config.cmake:196 (find_package)"
-      - "CMakeLists.txt:58 (find_package)"
+      - "CMakeLists.txt:68 (find_package)"
     mode: "program"
     variable: "Vulkan_GLSLC_EXECUTABLE"
     description: "Path to a program."
@@ -2581,7 +2581,7 @@ events:
       - "C:/Qt/6.8.3/msvc2022_64/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake:45 (_qt_internal_find_qt_dependencies)"
       - "C:/Qt/6.8.3/msvc2022_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake:43 (include)"
       - "C:/Qt/6.8.3/msvc2022_64/lib/cmake/Qt6/Qt6Config.cmake:196 (find_package)"
-      - "CMakeLists.txt:58 (find_package)"
+      - "CMakeLists.txt:68 (find_package)"
     mode: "program"
     variable: "Vulkan_GLSLANG_VALIDATOR_EXECUTABLE"
     description: "Path to a program."
@@ -2766,7 +2766,7 @@ events:
       - "C:/Qt/6.8.3/msvc2022_64/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake:45 (_qt_internal_find_qt_dependencies)"
       - "C:/Qt/6.8.3/msvc2022_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake:43 (include)"
       - "C:/Qt/6.8.3/msvc2022_64/lib/cmake/Qt6/Qt6Config.cmake:196 (find_package)"
-      - "CMakeLists.txt:58 (find_package)"
+      - "CMakeLists.txt:68 (find_package)"
     name: "Qt6Gui"
     configs:
       -
@@ -2862,7 +2862,7 @@ events:
     kind: "find_package-v1"
     backtrace:
       - "C:/Qt/6.8.3/msvc2022_64/lib/cmake/Qt6/Qt6Config.cmake:196 (find_package)"
-      - "CMakeLists.txt:58 (find_package)"
+      - "CMakeLists.txt:68 (find_package)"
     name: "Qt6Widgets"
     configs:
       -
@@ -2954,7 +2954,7 @@ events:
   -
     kind: "find_package-v1"
     backtrace:
-      - "CMakeLists.txt:58 (find_package)"
+      - "CMakeLists.txt:68 (find_package)"
     name: "Qt6"
     components:
       -
