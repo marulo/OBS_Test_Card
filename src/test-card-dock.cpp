@@ -3,7 +3,9 @@
 #include <QStyle>
 
 TestCardDock::TestCardDock(QWidget *parent)
-    : QWidget(parent), globalSource(nullptr), isEnabled(false) {
+    : QDialog(parent), globalSource(nullptr), isEnabled(false) {
+  setWindowTitle("Test Card Control");
+
   // Create buttons
   toggleButton = new QPushButton("TEST CARD", this);
   toggleButton->setCheckable(true);

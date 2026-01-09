@@ -55,6 +55,9 @@ target_link_libraries(${PROJECT_NAME} PRIVATE OBS::libobs)
 
 # Dependencias opcionales de QT
 if(ENABLE_QT)
+    set(CMAKE_AUTOMOC ON)
+    set(CMAKE_AUTORCC ON)
+    
     find_package(Qt6 COMPONENTS Widgets Core REQUIRED)
     
     # Find obs-frontend-api
@@ -77,13 +80,15 @@ if(ENABLE_QT)
         src/test-card-dock-register.cpp
     )
     
+    # Enable MOC for this target
+    set_target_properties(${PROJECT_NAME} PROPERTIES AUTOMOC ON)
+    
     target_link_libraries(${PROJECT_NAME} PRIVATE 
         Qt6::Core 
         Qt6::Widgets
         OBS::frontend-api
     )
     target_compile_definitions(${PROJECT_NAME} PRIVATE ENABLE_QT)
-    set(CMAKE_AUTOMOC ON)
 endif()
 
 # Propiedades del target

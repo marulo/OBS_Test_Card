@@ -1,6 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <ClCompile Include="D:\antigravity_dev_files\TEST CARD FILES TO COMPILE\dist\windows\source\build\obs-test-card_autogen\mocs_compilation_Debug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="D:\antigravity_dev_files\TEST CARD FILES TO COMPILE\dist\windows\source\src\plugin-main.c">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -8,6 +11,21 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="D:\antigravity_dev_files\TEST CARD FILES TO COMPILE\dist\windows\source\build\src\plugin-support.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\antigravity_dev_files\TEST CARD FILES TO COMPILE\dist\windows\source\src\test-card-dock.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\antigravity_dev_files\TEST CARD FILES TO COMPILE\dist\windows\source\src\test-card-dock-register.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\antigravity_dev_files\TEST CARD FILES TO COMPILE\dist\windows\source\build\obs-test-card_autogen\mocs_compilation_Release.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\antigravity_dev_files\TEST CARD FILES TO COMPILE\dist\windows\source\build\obs-test-card_autogen\mocs_compilation_MinSizeRel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\antigravity_dev_files\TEST CARD FILES TO COMPILE\dist\windows\source\build\obs-test-card_autogen\mocs_compilation_RelWithDebInfo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

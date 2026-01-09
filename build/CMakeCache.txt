@@ -258,13 +258,13 @@ CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Use Qt functionality
-ENABLE_QT:BOOL=OFF
+ENABLE_QT:BOOL=ON
 
 //No help, variable specified on the command line.
 LIBOBS_CONFIG_DIR:UNINITIALIZED=C:/obs-studio-source/build/config
 
 //No help, variable specified on the command line.
-LIBOBS_FRONTEND_API_LIB:UNINITIALIZED=C:/obs-studio-source/build/UI/obs-frontend-api/Release/obs-frontend-api.lib
+LIBOBS_FRONTEND_API_LIB:UNINITIALIZED=C:/obs-studio-source/build/frontend/api/Release/obs-frontend-api.lib
 
 //No help, variable specified on the command line.
 LIBOBS_FRONTEND_INCLUDE_DIR:UNINITIALIZED=C:/obs-studio-source/frontend/api
@@ -324,9 +324,6 @@ Vulkan_LIBRARY:FILEPATH=Vulkan_LIBRARY-NOTFOUND
 //Path to a program.
 WINDEPLOYQT_EXECUTABLE:FILEPATH=C:/Qt/6.8.3/msvc2022_64/bin/windeployqt.exe
 
-//The directory containing a CMake configuration file for libobs.
-libobs_DIR:PATH=libobs_DIR-NOTFOUND
-
 //Value Computed by CMake
 obs-test-card_BINARY_DIR:STATIC=D:/antigravity_dev_files/TEST CARD FILES TO COMPILE/dist/windows/source/build
 
@@ -334,7 +331,7 @@ obs-test-card_BINARY_DIR:STATIC=D:/antigravity_dev_files/TEST CARD FILES TO COMP
 obs-test-card_IS_TOP_LEVEL:STATIC=ON
 
 //Dependencies for the target
-obs-test-card_LIB_DEPENDS:STATIC=general;OBS::libobs;
+obs-test-card_LIB_DEPENDS:STATIC=general;OBS::libobs;general;Qt6::Core;general;Qt6::Widgets;general;OBS::frontend-api;
 
 //Value Computed by CMake
 obs-test-card_SOURCE_DIR:STATIC=D:/antigravity_dev_files/TEST CARD FILES TO COMPILE/dist/windows/source

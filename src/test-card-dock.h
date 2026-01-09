@@ -1,15 +1,15 @@
 #pragma once
 
+#include <QDialog>
 #include <QHBoxLayout>
 #include <QPushButton>
-#include <QWidget>
 
 
 #include <obs-frontend-api.h>
 #include <obs.h>
 
 
-class TestCardDock : public QWidget {
+class TestCardDock : public QDialog {
   Q_OBJECT
 
 public:
