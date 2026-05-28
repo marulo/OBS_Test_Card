@@ -659,10 +659,10 @@ static void test_source_video_render(void *data, gs_effect_t *effect) {
       gs_technique_begin(tech_point);
       gs_technique_begin_pass(tech_point, 0);
 
-      int cx = src->width / 2;
-      int cy = src->height / 2;
-      float start_x = cx + src->grid_min_x * src->cell_size;
-      float start_y = cy + src->grid_min_y * src->cell_size;
+      int cx = (int)(src->width / 2);
+      int cy = (int)(src->height / 2);
+      float start_x = (float)(cx + src->grid_min_x * src->cell_size);
+      float start_y = (float)(cy + src->grid_min_y * src->cell_size);
       
       gs_matrix_push();
       gs_matrix_translate3f(start_x, start_y, 0.0f);
@@ -688,37 +688,37 @@ static void test_source_video_render(void *data, gs_effect_t *effect) {
   float hue = fmodf(src->rotation_time * 30.0f, 360.0f);
   uint32_t border_color = hsv_to_rgb(hue, 1.0f, 1.0f);
   
-  int cx_line = src->width / 2;
-  int cy_line = src->height / 2;
+  int cx_line = (int)(src->width / 2);
+  int cy_line = (int)(src->height / 2);
   
   if (src->tex_white) {
-      draw_solid_rect(solid, src->tex_white, cx_line - 2, 0, 4, src->height, border_color);
-      draw_solid_rect(solid, src->tex_white, 0, cy_line - 2, src->width, 4, border_color);
+      draw_solid_rect(solid, src->tex_white, (float)(cx_line - 2), 0.0f, 4.0f, (float)src->height, border_color);
+      draw_solid_rect(solid, src->tex_white, 0.0f, (float)(cy_line - 2), (float)src->width, 4.0f, border_color);
       
-      draw_solid_rect(solid, src->tex_white, 0, 0, src->width, 3, border_color);
-      draw_solid_rect(solid, src->tex_white, 0, src->height - 3, src->width, 3, border_color);
-      draw_solid_rect(solid, src->tex_white, 0, 0, 3, src->height, border_color);
-      draw_solid_rect(solid, src->tex_white, src->width - 3, 0, 3, src->height, border_color);
+      draw_solid_rect(solid, src->tex_white, 0.0f, 0.0f, (float)src->width, 3.0f, border_color);
+      draw_solid_rect(solid, src->tex_white, 0.0f, (float)src->height - 3.0f, (float)src->width, 3.0f, border_color);
+      draw_solid_rect(solid, src->tex_white, 0.0f, 0.0f, 3.0f, (float)src->height, border_color);
+      draw_solid_rect(solid, src->tex_white, (float)src->width - 3.0f, 0.0f, 3.0f, (float)src->height, border_color);
       
-      float margin_x = src->width * 0.05f;
-      float margin_y = src->height * 0.05f;
-      draw_solid_rect(solid, src->tex_white, margin_x, margin_y, src->width - 2*margin_x, 3, border_color);
-      draw_solid_rect(solid, src->tex_white, margin_x, src->height - margin_y - 3, src->width - 2*margin_x, 3, border_color);
-      draw_solid_rect(solid, src->tex_white, margin_x, margin_y, 3, src->height - 2*margin_y, border_color);
-      draw_solid_rect(solid, src->tex_white, src->width - margin_x - 3, margin_y, 3, src->height - 2*margin_y, border_color);
+      float margin_x = (float)src->width * 0.05f;
+      float margin_y = (float)src->height * 0.05f;
+      draw_solid_rect(solid, src->tex_white, margin_x, margin_y, (float)src->width - 2.0f * margin_x, 3.0f, border_color);
+      draw_solid_rect(solid, src->tex_white, margin_x, (float)src->height - margin_y - 3.0f, (float)src->width - 2.0f * margin_x, 3.0f, border_color);
+      draw_solid_rect(solid, src->tex_white, margin_x, margin_y, 3.0f, (float)src->height - 2.0f * margin_y, border_color);
+      draw_solid_rect(solid, src->tex_white, (float)src->width - margin_x - 3.0f, margin_y, 3.0f, (float)src->height - 2.0f * margin_y, border_color);
       
       uint32_t white = 0xFFFFFFFF;
       float h_val = src->h_scan_time;
       if (h_val > 20.0f) h_val = 40.0f - h_val;
       float h_factor = (20.0f - h_val) / 20.0f;
-      int h_y = (int)(h_factor * src->height);
-      draw_solid_rect(solid, src->tex_white, 0, h_y, src->width, 2, white);
+      int h_y = (int)(h_factor * (float)src->height);
+      draw_solid_rect(solid, src->tex_white, 0.0f, (float)h_y, (float)src->width, 2.0f, white);
       
       float v_val = src->v_scan_time;
       if (v_val > 10.0f) v_val = 20.0f - v_val;
       float v_factor = v_val / 10.0f;
-      int v_x = (int)(v_factor * src->width);
-      draw_solid_rect(solid, src->tex_white, v_x, 0, 2, src->height, white);
+      int v_x = (int)(v_factor * (float)src->width);
+      draw_solid_rect(solid, src->tex_white, (float)v_x, 0.0f, 2.0f, (float)src->height, white);
   }
   
   // Translucent Center Rect
@@ -732,18 +732,18 @@ static void test_source_video_render(void *data, gs_effect_t *effect) {
       uint32_t tex_w = gs_texture_get_width(src->logo_tex);
       uint32_t tex_h = gs_texture_get_height(src->logo_tex);
       float scale = (min_dim * 0.5f) / (float)tex_h;
-      final_logo_w = tex_w * scale;
+      final_logo_w = (float)tex_w * scale;
   }
   // Multiplicamos por 0.9 para quitar el margen transparente del PNG 
   // y que los bordes rectos queden perfectamente ocultos detrás del círculo blanco.
   int rect_width = (int)(final_logo_w * 0.9f);
-  int rect_left = (src->width - rect_width) / 2;
+  int rect_left = (int)(((int)src->width - rect_width) / 2);
   int rect_top = 0;
-  int rect_bottom = src->height / 2;
+  int rect_bottom = (int)(src->height / 2);
   float rect_hue = fmodf(src->rotation_time / 60.0f, 1.0f) * 360.0f;
   uint32_t rect_color = hsv_to_rgb(rect_hue, 1.0f, 0.3f);
   rect_color = (rect_color & 0x00FFFFFF) | 0x80000000;
-  draw_solid_rect(solid, src->tex_white, rect_left, rect_top, rect_width, rect_bottom, rect_color);
+  draw_solid_rect(solid, src->tex_white, (float)rect_left, (float)rect_top, (float)rect_width, (float)rect_bottom, rect_color);
 
   gs_blend_state_pop();
 
@@ -756,14 +756,14 @@ static void test_source_video_render(void *data, gs_effect_t *effect) {
   // Logo
   if (src->logo_tex) {
       float logo_h = min_dim * 0.5f;
-      float logo_center_y = src->height / 2.0f;
+      float logo_center_y = (float)src->height / 2.0f;
       uint32_t tex_w = gs_texture_get_width(src->logo_tex);
       uint32_t tex_h = gs_texture_get_height(src->logo_tex);
-      float scale = logo_h / tex_h;
-      float final_w = tex_w * scale;
-      float final_h = tex_h * scale;
+      float scale = logo_h / (float)tex_h;
+      float final_w = (float)tex_w * scale;
+      float final_h = (float)tex_h * scale;
 
-      float lx = (src->width - final_w) / 2.0f;
+      float lx = ((float)src->width - final_w) / 2.0f;
       float ly = logo_center_y - final_h / 2.0f;
 
       gs_matrix_push();
@@ -787,14 +787,14 @@ static void test_source_video_render(void *data, gs_effect_t *effect) {
       uint32_t t_h = gs_texture_get_height(src->obs_text_tex);
       
       float target_w = min_dim * 0.5f; // Match spinning logo width
-      float scale = target_w / t_w;
-      float target_h = t_h * scale;
+      float scale = target_w / (float)t_w;
+      float target_h = (float)t_h * scale;
       
       float padding = min_dim * 0.01f;
-      float margin_y = src->height * 0.05f;
+      float margin_y = (float)src->height * 0.05f;
       
-      float dx = (src->width - target_w) / 2.0f;
-      float dy = src->height - margin_y - 3.0f - target_h - padding; // Just above the orange border line
+      float dx = ((float)src->width - target_w) / 2.0f;
+      float dy = (float)src->height - margin_y - 3.0f - target_h - padding; // Just above the orange border line
       
       gs_matrix_push();
       gs_matrix_translate3f(dx, dy, 0.0f);
@@ -810,14 +810,14 @@ static void test_source_video_render(void *data, gs_effect_t *effect) {
   // Text
   if (src->layer_text) {
       float logo_h = min_dim * 0.5f;
-      float logo_center_y = src->height / 2.0f;
+      float logo_center_y = (float)src->height / 2.0f;
       float logo_top = logo_center_y - logo_h / 2.0f;
       
       int padding = (int)(min_dim * 0.02f);
       if (padding < 10) padding = 10;
       
-      float text_y = logo_top - padding - src->text_tex_height;
-      float text_x = (src->width - src->text_tex_width) / 2.0f;
+      float text_y = logo_top - padding - (float)src->text_tex_height;
+      float text_x = ((float)src->width - (float)src->text_tex_width) / 2.0f;
       
       gs_matrix_push();
       gs_matrix_translate3f(text_x, text_y, 0.0f);
