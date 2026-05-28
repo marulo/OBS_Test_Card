@@ -137,7 +137,10 @@ static bool load_system_font(struct test_source_data *data) {
     fseek(f, 0, SEEK_SET);
 
     data->font_data = bmalloc(size);
-    fread(data->font_data, 1, size, f);
+    size_t read_bytes = fread(data->font_data, 1, size, f);
+    if (read_bytes != (size_t)size) {
+      blog(LOG_WARNING, "[test_source] Could not read entire font file");
+    }
     fclose(f);
 
     if (stbtt_InitFont(&data->font, data->font_data, 0)) {
