@@ -10,3 +10,4 @@
 .github/scripts/.Aptfile text eol=lf
 .github/scripts/.Brewfile text eol=lf
 .github/scripts/utils.zsh/* text eol=lf
+build-aux/run-clang-format text eol=lf

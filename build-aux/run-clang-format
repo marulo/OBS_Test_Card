@@ -1,0 +1,45 @@
+#!/usr/bin/env zsh
+# Wrapper around clang-format for OBS plugin projects.
+# Runs clang-format --dry-run --Werror on each file passed.
+
+setopt ERR_EXIT PIPE_FAIL
+
+local fail_mode='never'
+local -a files=()
+
+while (( # > 0 )); do
+  case $1 in
+    --fail-error) fail_mode='error' ;;
+    --fail-warning) fail_mode='warning' ;;
+    --fail-never) fail_mode='never' ;;
+    --check) ;; # ignored, we always check
+    *) files+=($1) ;;
+  esac
+  shift
+done
+
+if (( ${#files} == 0 )); then
+  print 'No files to check.'
+  exit 0
+fi
+
+local -i errors=0
+for file in ${files}; do
+  if [[ ! -f $file ]]; then
+    continue
+  fi
+  if ! clang-format --dry-run --Werror "$file" 2>/dev/null; then
+    print "clang-format: ${file} needs formatting"
+    errors+=1
+  fi
+done
+
+if (( errors > 0 )); then
+  print "${errors} file(s) need formatting."
+  case $fail_mode in
+    error|warning) exit 1 ;;
+    *) exit 0 ;;
+  esac
+fi
+
+print 'All files are properly formatted.'
