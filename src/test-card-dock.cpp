@@ -11,8 +11,7 @@ TestCardDock::TestCardDock(QWidget *parent)
   toggleButton->setCheckable(true);
   toggleButton->setMinimumWidth(120);
 
-  settingsButton = new QPushButton("⋮", this);
-  settingsButton->setMaximumWidth(30);
+  settingsButton = new QPushButton("⚙ Config", this);
   settingsButton->setToolTip("Settings");
 
   // Create layout
@@ -101,7 +100,7 @@ void TestCardDock::onToggleClicked() {
   if (isEnabled) {
     addToCurrentScene();
   } else {
-    removeFromCurrentScene();
+    removeFromAllScenes();
   }
 
   updateButtonState();
@@ -178,6 +177,26 @@ void TestCardDock::removeFromCurrentScene() {
   }
 
   obs_source_release(scene);
+}
+
+void TestCardDock::removeFromAllScenes() {
+  struct obs_frontend_source_list scenes = {0};
+  obs_frontend_get_scenes(&scenes);
+
+  for (size_t i = 0; i < scenes.sources.num; i++) {
+    obs_source_t *scene_source = scenes.sources.array[i];
+    obs_scene_t *obs_scene = obs_scene_from_source(scene_source);
+    if (obs_scene) {
+      obs_sceneitem_t *item =
+          obs_scene_find_source(obs_scene, obs_source_get_name(globalSource));
+      if (item) {
+        obs_sceneitem_remove(item);
+        blog(LOG_INFO, "[TestCardDock] Removed test card from scene: %s", obs_source_get_name(scene_source));
+      }
+    }
+  }
+
+  obs_frontend_source_list_free(&scenes);
 }
 
 void TestCardDock::onFrontendEvent(enum obs_frontend_event event,

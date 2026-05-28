@@ -1,6 +1,7 @@
 /*
-Plugin Name
-Copyright (C) <Year> <Developer> <Email Address>
+OBS Test Card Plugin
+Copyright (C) 2026 Marulo
+
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -21,6 +22,7 @@ with this program. If not, see <https://www.gnu.org/licenses/>
 
 OBS_DECLARE_MODULE()
 OBS_MODULE_USE_DEFAULT_LOCALE(PLUGIN_NAME, "en-US")
+OBS_MODULE_AUTHOR("Marulo")
 
 extern struct obs_source_info test_source_info;
 #ifdef ENABLE_QT

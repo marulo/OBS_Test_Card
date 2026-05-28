@@ -9,7 +9,7 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_C_STANDARD 11)
 
 # Nombre del archivo de salida (dll)
-set(OUTPUT_NAME "test-source")
+set(OUTPUT_NAME "obs-test-card")
 
 # Platform-specific configurations
 if(APPLE)

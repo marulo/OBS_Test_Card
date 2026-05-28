@@ -26,6 +26,7 @@ private:
   void updateButtonState();
   void addToCurrentScene();
   void removeFromCurrentScene();
+  void removeFromAllScenes();
 
   static void onFrontendEvent(enum obs_frontend_event event,
                               void *private_data);
