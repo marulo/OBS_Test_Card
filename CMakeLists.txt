@@ -32,13 +32,15 @@ if(ENABLE_QT)
     ${CMAKE_PROJECT_NAME}
     PROPERTIES AUTOMOC ON AUTOUIC ON AUTORCC ON
   )
+  target_sources(${CMAKE_PROJECT_NAME} PRIVATE 
+    src/test-card-dock.cpp
+    src/test-card-dock-register.cpp
+  )
 endif()
 
 target_sources(${CMAKE_PROJECT_NAME} PRIVATE 
   src/plugin-main.c
   src/test-source.c
-  src/test-card-dock.cpp
-  src/test-card-dock-register.cpp
 )
 
 set_target_properties_plugin(${CMAKE_PROJECT_NAME} PROPERTIES OUTPUT_NAME ${_name})
