@@ -659,9 +659,12 @@ static void test_source_update(void *data, obs_data_t *settings)
 		src->dirty |= DIRTY_GRID;
 	}
 
-	/* Save all settings whenever anything changed */
-	if (src->dirty || old_dark != src->bg_dark_color || old_light != src->bg_light_color ||
-	    old_cell_size != src->cell_size) {
+	/* Save all settings whenever anything changed — but only AFTER the first
+	 * video_tick has loaded the persisted config. This prevents OBS's scene
+	 * collection loader from overwriting the saved JSON with default values
+	 * on startup before we've had a chance to restore them. */
+	if (src->config_loaded && (src->dirty || old_dark != src->bg_dark_color || old_light != src->bg_light_color ||
+				   old_cell_size != src->cell_size)) {
 		char *config_path = obs_module_get_config_path(obs_current_module(), "obs-test-card.json");
 		if (config_path) {
 			char *dir = bstrdup(config_path);
@@ -1064,7 +1067,7 @@ static obs_properties_t *test_source_get_properties(void *data)
 
 	obs_properties_add_text(props, "custom_text", obs_module_text("TestCard.CustomText"), OBS_TEXT_DEFAULT);
 
-	obs_properties_add_text(props, "version_info", "OBS Test Card V. 0.2.6 by Marulo", OBS_TEXT_INFO);
+	obs_properties_add_text(props, "version_info", "OBS Test Card V. 0.2.7 by Marulo", OBS_TEXT_INFO);
 
 	return props;
 }
