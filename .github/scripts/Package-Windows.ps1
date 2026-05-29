@@ -77,11 +77,16 @@ function Package {
     # Check if iscc is in PATH, otherwise use default GitHub Actions path
     $IsccCmd = Get-Command "iscc" -ErrorAction SilentlyContinue
     if (-not $IsccCmd) {
-        $IsccCmd = "C:\Program Files (x86)\Inno Setup 6\iscc.exe"
+        if (Test-Path "C:\Program Files (x86)\Inno Setup 6\iscc.exe") {
+            $IsccCmd = "C:\Program Files (x86)\Inno Setup 6\iscc.exe"
+        }
     }
     
-    if (Test-Path $IsccCmd) {
+    if ($IsccCmd) {
         & $IsccCmd $IsccArgs
+        if ($LASTEXITCODE -ne 0) {
+            Write-Error "ISCC failed with exit code $LASTEXITCODE"
+        }
     } else {
         Write-Warning "Inno Setup Compiler (iscc.exe) not found. Skipping .exe generation."
     }
