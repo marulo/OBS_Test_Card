@@ -22,6 +22,7 @@ if(ENABLE_FRONTEND_API)
 endif()
 
 if(ENABLE_QT)
+  target_compile_definitions(${CMAKE_PROJECT_NAME} PRIVATE ENABLE_QT)
   find_package(Qt6 COMPONENTS Widgets Core)
   target_link_libraries(${CMAKE_PROJECT_NAME} PRIVATE Qt6::Core Qt6::Widgets)
   target_compile_options(
