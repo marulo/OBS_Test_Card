@@ -72,6 +72,7 @@ function Package {
     $IsccArgs = @(
         "/DMyAppVersion=${ProductVersion}",
         "/DOutputBase=${ProductName}",
+        "/DConfiguration=${Configuration}",
         "${ScriptHome}/installer.iss"
     )
     # Check if iscc is in PATH, otherwise use default GitHub Actions path
