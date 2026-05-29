@@ -1,6 +1,7 @@
 #include "test-card-dock.h"
 #include <QHBoxLayout>
 #include <QStyle>
+#include <obs-module.h>
 
 TestCardDock::TestCardDock(QWidget *parent)
     : QDialog(parent), globalSource(nullptr), isEnabled(false) {
@@ -57,6 +58,20 @@ void TestCardDock::createGlobalSource() {
   if (!globalSource) {
     // Create new source with correct ID
     obs_data_t *settings = obs_data_create();
+
+    char *config_path = obs_module_get_config_path(obs_current_module(), "obs-test-card.json");
+    if (config_path) {
+      obs_data_t *data = obs_data_create_from_json_file(config_path);
+      if (data) {
+        const char *saved_text = obs_data_get_string(data, "custom_text");
+        if (saved_text && *saved_text) {
+          obs_data_set_string(settings, "custom_text", saved_text);
+        }
+        obs_data_release(data);
+      }
+      bfree(config_path);
+    }
+
     globalSource = obs_source_create("test_source", "__Test_Card_Global__",
                                      settings, nullptr);
     obs_data_release(settings);

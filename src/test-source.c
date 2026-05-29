@@ -647,6 +647,15 @@ static void test_source_update(void *data, obs_data_t *settings)
 		strncpy(src->custom_text, new_text, sizeof(src->custom_text) - 1);
 		src->custom_text[sizeof(src->custom_text) - 1] = '\0';
 		src->dirty |= DIRTY_TEXT;
+
+		char *config_path = obs_module_get_config_path(obs_current_module(), "obs-test-card.json");
+		if (config_path) {
+			obs_data_t *data = obs_data_create();
+			obs_data_set_string(data, "custom_text", src->custom_text);
+			obs_data_save_json_safe(data, config_path, "tmp", "bak");
+			obs_data_release(data);
+			bfree(config_path);
+		}
 	}
 
 	if (old_dark != src->bg_dark_color || old_light != src->bg_light_color || old_cell_size != src->cell_size) {
@@ -980,7 +989,7 @@ static obs_properties_t *test_source_get_properties(void *data)
 
 	obs_properties_add_text(props, "custom_text", obs_module_text("TestCard.CustomText"), OBS_TEXT_DEFAULT);
 
-	obs_properties_add_text(props, "version_info", "OBS Test Card V. 0.1.8 by Marulo", OBS_TEXT_INFO);
+	obs_properties_add_text(props, "version_info", "OBS Test Card V. 0.1.9 by Marulo", OBS_TEXT_INFO);
 
 	return props;
 }
