@@ -7,6 +7,7 @@
 #include <graphics/matrix4.h>
 #include <obs-module.h>
 #include <util/bmem.h>
+#include <util/platform.h>
 
 #include <math.h>
 #include <stdbool.h>
@@ -651,6 +652,17 @@ static void test_source_update(void *data, obs_data_t *settings)
 
 		char *config_path = obs_module_get_config_path(obs_current_module(), "obs-test-card.json");
 		if (config_path) {
+			/* Ensure the plugin config directory exists before saving */
+			char *dir = bstrdup(config_path);
+			char *sep = strrchr(dir, '/');
+			if (!sep)
+				sep = strrchr(dir, '\\');
+			if (sep) {
+				*sep = '\0';
+				os_mkdirs(dir);
+			}
+			bfree(dir);
+
 			obs_data_t *data = obs_data_create();
 			obs_data_set_string(data, "custom_text", src->custom_text);
 			obs_data_save_json_safe(data, config_path, "tmp", "bak");
@@ -1012,7 +1024,7 @@ static obs_properties_t *test_source_get_properties(void *data)
 
 	obs_properties_add_text(props, "custom_text", obs_module_text("TestCard.CustomText"), OBS_TEXT_DEFAULT);
 
-	obs_properties_add_text(props, "version_info", "OBS Test Card V. 0.2.4 by Marulo", OBS_TEXT_INFO);
+	obs_properties_add_text(props, "version_info", "OBS Test Card V. 0.2.5 by Marulo", OBS_TEXT_INFO);
 
 	return props;
 }
