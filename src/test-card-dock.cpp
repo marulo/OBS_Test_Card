@@ -171,66 +171,62 @@ void TestCardDock::activateTestCard()
 
 	obs_source_set_enabled(globalSource, true);
 
-	QString debugInfo = QString::fromUtf8("DEBUG INFO V0.4.10\n\n");
+	blog(LOG_INFO, "DEBUG INFO V0.4.13");
 
 	obs_source_t *program_scene = obs_frontend_get_current_scene();
 	if (program_scene) {
-		blog(LOG_INFO, "[TestCardDock] Program scene name: %s", obs_source_get_name(program_scene));
-		debugInfo += QString::fromUtf8("Program Scene: ") +
-			     QString::fromUtf8(obs_source_get_name(program_scene)) + QString::fromUtf8("\n");
+		blog(LOG_INFO, "[TestCardDock] Program Scene: %s", obs_source_get_name(program_scene));
 		obs_scene_t *ps = obs_scene_from_source(program_scene);
 		if (ps) {
 			obs_sceneitem_t *item = obs_scene_add(ps, globalSource);
 			if (item) {
 				obs_sceneitem_set_order(item, OBS_ORDER_MOVE_TOP);
 				obs_sceneitem_set_visible(item, true);
-				debugInfo += QString::fromUtf8("  -> Successfully added to Program Scene!\n");
+				blog(LOG_INFO, "[TestCardDock]   -> Successfully added to Program Scene!");
 			} else {
-				debugInfo += QString::fromUtf8(
-					"  -> FAILED to add to Program Scene (obs_scene_add returned null)\n");
+				blog(LOG_INFO,
+				     "[TestCardDock]   -> FAILED to add to Program Scene (obs_scene_add returned null)");
 			}
 		} else {
-			debugInfo += QString::fromUtf8("  -> FAILED: Program source is not a valid scene\n");
+			blog(LOG_INFO, "[TestCardDock]   -> FAILED: Program source is not a valid scene");
 		}
 		obs_source_release(program_scene);
 	} else {
-		debugInfo += QString::fromUtf8("Program Scene is NULL!\n");
+		blog(LOG_INFO, "[TestCardDock] Program Scene is NULL!");
 	}
 
 	obs_source_t *preview_scene = obs_frontend_get_current_preview_scene();
 	if (preview_scene) {
-		debugInfo += QString::fromUtf8("\nPreview Scene: ") +
-			     QString::fromUtf8(obs_source_get_name(preview_scene)) + QString::fromUtf8("\n");
+		blog(LOG_INFO, "[TestCardDock] Preview Scene: %s", obs_source_get_name(preview_scene));
 		obs_scene_t *pvs = obs_scene_from_source(preview_scene);
 		if (pvs) {
 			obs_sceneitem_t *item = obs_scene_add(pvs, globalSource);
 			if (item) {
 				obs_sceneitem_set_order(item, OBS_ORDER_MOVE_TOP);
 				obs_sceneitem_set_visible(item, true);
-				debugInfo += QString::fromUtf8("  -> Successfully added to Preview Scene!\n");
+				blog(LOG_INFO, "[TestCardDock]   -> Successfully added to Preview Scene!");
 			} else {
-				debugInfo += QString::fromUtf8("  -> FAILED to add to Preview Scene\n");
+				blog(LOG_INFO, "[TestCardDock]   -> FAILED to add to Preview Scene");
 			}
 		} else {
-			debugInfo += QString::fromUtf8("  -> FAILED: Preview source is not a valid scene\n");
+			blog(LOG_INFO, "[TestCardDock]   -> FAILED: Preview source is not a valid scene");
 		}
 		obs_source_release(preview_scene);
 	} else {
-		debugInfo += QString::fromUtf8("\nPreview Scene is NULL!\n");
+		blog(LOG_INFO, "[TestCardDock] Preview Scene is NULL!");
 	}
 
 	// Dump base scenes
 	struct obs_frontend_source_list scenes = {0};
 	obs_frontend_get_scenes(&scenes);
-	debugInfo += QString::fromUtf8("\nBase Scenes Count: ") + QString::number(scenes.sources.num) +
-		     QString::fromUtf8("\n");
+	blog(LOG_INFO, "[TestCardDock] Base Scenes Count: %zu", scenes.sources.num);
 	for (size_t i = 0; i < scenes.sources.num; i++) {
 		obs_source_t *base_scene = scenes.sources.array[i];
 		inject_into_scene(base_scene, globalSource);
 	}
 	obs_frontend_source_list_free(&scenes);
 
-	blog(LOG_INFO, "[TestCardDock] Test card ON\n%s", debugInfo.toUtf8().constData());
+	blog(LOG_INFO, "[TestCardDock] Test card ON");
 }
 
 void TestCardDock::deactivateTestCard()
