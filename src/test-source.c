@@ -658,7 +658,7 @@ static void test_source_update(void *data, obs_data_t *settings)
 		src->dirty |= DIRTY_GRID;
 	}
 
-	/* Save all settings whenever anything changed — but only AFTER the first
+	/* Save all settings whenever anything changed - but only AFTER the first
 	 * video_tick has loaded the persisted config. This prevents OBS's scene
 	 * collection loader from overwriting the saved JSON with default values
 	 * on startup before we've had a chance to restore them. */
@@ -1087,7 +1087,7 @@ static obs_properties_t *test_source_get_properties(void *data)
 
 	obs_properties_add_text(props, "custom_text", obs_module_text("TestCard.CustomText"), OBS_TEXT_DEFAULT);
 
-	obs_properties_add_text(props, "version_info", "OBS Test Card V. 0.4.10 by Marulo", OBS_TEXT_INFO);
+	obs_properties_add_text(props, "version_info", "OBS Test Card V. 0.4.11 by Marulo", OBS_TEXT_INFO);
 
 	return props;
 }

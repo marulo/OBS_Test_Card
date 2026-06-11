@@ -104,7 +104,7 @@ TestCardDock::TestCardDock(QWidget *parent) : QDialog(parent), globalSource(null
 	toggleButton->setCheckable(true);
 	toggleButton->setMinimumWidth(120);
 
-	settingsButton = new QPushButton("⚙ Config", this);
+	settingsButton = new QPushButton("Config", this);
 	settingsButton->setToolTip("Settings");
 
 	QHBoxLayout *layout = new QHBoxLayout(this);
@@ -245,7 +245,7 @@ void TestCardDock::deactivateTestCard()
 	// 2. Completely obliterate it from all scenes to keep the user's workspace clean
 	cleanupStaleSceneItems();
 
-	blog(LOG_INFO, "[TestCardDock] Test card OFF → Exterminated from all scenes");
+	blog(LOG_INFO, "[TestCardDock] Test card OFF -> Exterminated from all scenes");
 }
 
 // ---------------------------------------------------------------------------
