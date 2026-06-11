@@ -1,6 +1,5 @@
 #include "test-card-dock.h"
 #include <QHBoxLayout>
-#include <QMessageBox>
 #include <obs-module.h>
 #include <graphics/graphics.h>
 
@@ -231,8 +230,7 @@ void TestCardDock::activateTestCard()
 	}
 	obs_frontend_source_list_free(&scenes);
 
-	QMessageBox::information(this, QString::fromUtf8("Test Card 0.4.10 DEBUG"), debugInfo);
-	blog(LOG_INFO, "[TestCardDock] Test card ON");
+	blog(LOG_INFO, "[TestCardDock] Test card ON\n%s", debugInfo.toUtf8().constData());
 }
 
 void TestCardDock::deactivateTestCard()
