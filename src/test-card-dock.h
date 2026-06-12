@@ -22,7 +22,7 @@ private:
 	void createGlobalSource();
 	void activateTestCard();
 	void deactivateTestCard();
-	void cleanupStaleSceneItems();
+	void cleanupAllScenes();
 	void updateButtonState();
 
 	static void onFrontendEvent(enum obs_frontend_event event, void *private_data);
@@ -30,6 +30,6 @@ private:
 	QPushButton *toggleButton;
 	QPushButton *settingsButton;
 
-	obs_source_t *globalSource; // the test_source (__Test_Card_Global__)
+	obs_source_t *globalSource;
 	bool isEnabled;
 };
