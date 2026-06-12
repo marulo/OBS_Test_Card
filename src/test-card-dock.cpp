@@ -158,60 +158,35 @@ void TestCardDock::activateTestCard()
 
 	obs_source_set_enabled(globalSource, true);
 
-	blog(LOG_INFO, "%s", "DEBUG INFO V0.4.14");
-
-	obs_source_t *program_scene = obs_frontend_get_current_scene();
-	if (program_scene) {
-		blog(LOG_INFO, "[TestCardDock] Program Scene: %s", obs_source_get_name(program_scene));
-		obs_scene_t *ps = obs_scene_from_source(program_scene);
-		if (ps) {
-			obs_sceneitem_t *item = obs_scene_add(ps, globalSource);
-			if (item) {
-				obs_sceneitem_set_order(item, OBS_ORDER_MOVE_TOP);
-				obs_sceneitem_set_visible(item, true);
-				blog(LOG_INFO, "%s", "[TestCardDock]   -> Successfully added to Program Scene!");
-			} else {
-				blog(LOG_INFO, "%s",
-				     "[TestCardDock]   -> FAILED to add to Program Scene (obs_scene_add returned null)");
-			}
-		} else {
-			blog(LOG_INFO, "%s", "[TestCardDock]   -> FAILED: Program source is not a valid scene");
-		}
-		obs_source_release(program_scene);
-	} else {
-		blog(LOG_INFO, "%s", "[TestCardDock] Program Scene is NULL!");
-	}
-
-	obs_source_t *preview_scene = obs_frontend_get_current_preview_scene();
-	if (preview_scene) {
-		blog(LOG_INFO, "[TestCardDock] Preview Scene: %s", obs_source_get_name(preview_scene));
-		obs_scene_t *pvs = obs_scene_from_source(preview_scene);
-		if (pvs) {
-			obs_sceneitem_t *item = obs_scene_add(pvs, globalSource);
-			if (item) {
-				obs_sceneitem_set_order(item, OBS_ORDER_MOVE_TOP);
-				obs_sceneitem_set_visible(item, true);
-				blog(LOG_INFO, "%s", "[TestCardDock]   -> Successfully added to Preview Scene!");
-			} else {
-				blog(LOG_INFO, "%s", "[TestCardDock]   -> FAILED to add to Preview Scene");
-			}
-		} else {
-			blog(LOG_INFO, "%s", "[TestCardDock]   -> FAILED: Preview source is not a valid scene");
-		}
-		obs_source_release(preview_scene);
-	} else {
-		blog(LOG_INFO, "%s", "[TestCardDock] Preview Scene is NULL!");
-	}
-
-	// Dump base scenes
+	// 1. Inject into ALL base scenes (covers Preview in studio mode)
 	struct obs_frontend_source_list scenes = {};
 	obs_frontend_get_scenes(&scenes);
-	blog(LOG_INFO, "[TestCardDock] Base Scenes Count: %zu", scenes.sources.num);
+	blog(LOG_INFO, "[TestCardDock] Injecting into %zu base scenes", scenes.sources.num);
 	for (size_t i = 0; i < scenes.sources.num; i++) {
-		obs_source_t *base_scene = scenes.sources.array[i];
-		inject_into_scene(base_scene, globalSource);
+		inject_into_scene(scenes.sources.array[i], globalSource);
 	}
 	obs_frontend_source_list_free(&scenes);
+
+	// 2. In Studio Mode with "Duplicate Scene", the Program output renders
+	//    a PRIVATE duplicate that is NOT in the base scene list.
+	//    We reach it by going: Channel 0 -> Transition -> Active Source.
+	if (obs_frontend_preview_program_mode_active()) {
+		obs_source_t *transition = obs_get_output_source(0);
+		if (transition) {
+			obs_source_t *active = obs_transition_get_active_source(transition);
+			if (active) {
+				blog(LOG_INFO, "[TestCardDock] Program output active source: %s (id: %s)",
+				     obs_source_get_name(active), obs_source_get_id(active));
+				inject_into_scene(active, globalSource);
+				obs_source_release(active);
+			} else {
+				blog(LOG_INFO, "%s", "[TestCardDock] No active source in program transition");
+			}
+			obs_source_release(transition);
+		} else {
+			blog(LOG_INFO, "%s", "[TestCardDock] No output source on channel 0");
+		}
+	}
 
 	blog(LOG_INFO, "%s", "[TestCardDock] Test card ON");
 }
@@ -219,14 +194,29 @@ void TestCardDock::activateTestCard()
 void TestCardDock::deactivateTestCard()
 {
 	if (globalSource) {
-		// 1. Disable the source globally
 		obs_source_set_enabled(globalSource, false);
 	}
 
-	// 2. Completely obliterate it from all scenes to keep the user's workspace clean
+	// Clean from ALL scenes including any private duplicates
 	cleanupStaleSceneItems();
 
-	blog(LOG_INFO, "%s", "[TestCardDock] Test card OFF -> Exterminated from all scenes");
+	// Also clean from the program output's active source (private duplicate)
+	if (obs_frontend_preview_program_mode_active()) {
+		obs_source_t *transition = obs_get_output_source(0);
+		if (transition) {
+			obs_source_t *active = obs_transition_get_active_source(transition);
+			if (active) {
+				obs_scene_t *scene = obs_scene_from_source(active);
+				if (scene) {
+					obs_scene_enum_items(scene, remove_stale_items_callback, nullptr);
+				}
+				obs_source_release(active);
+			}
+			obs_source_release(transition);
+		}
+	}
+
+	blog(LOG_INFO, "%s", "[TestCardDock] Test card OFF");
 }
 
 // ---------------------------------------------------------------------------
@@ -260,7 +250,9 @@ void TestCardDock::onFrontendEvent(enum obs_frontend_event event, void *ptr)
 		if (!dock->globalSource)
 			dock->createGlobalSource();
 
-		if (!dock->isEnabled) {
+		if (dock->isEnabled) {
+			dock->activateTestCard();
+		} else {
 			dock->cleanupStaleSceneItems();
 		}
 	}
@@ -276,10 +268,30 @@ void TestCardDock::onFrontendEvent(enum obs_frontend_event event, void *ptr)
 		}
 	}
 
-	if (event == OBS_FRONTEND_EVENT_SCENE_CHANGED || event == OBS_FRONTEND_EVENT_PREVIEW_SCENE_CHANGED) {
-		if (dock->isEnabled) {
-			// Ensure it follows the user if they change scenes while ON
-			dock->activateTestCard();
+	// When program scene changes (e.g. user transitions), inject into
+	// the new program output scene (which may be a fresh private duplicate)
+	if (event == OBS_FRONTEND_EVENT_SCENE_CHANGED) {
+		if (dock->isEnabled && dock->globalSource) {
+			obs_source_t *transition = obs_get_output_source(0);
+			if (transition) {
+				obs_source_t *active = obs_transition_get_active_source(transition);
+				if (active) {
+					inject_into_scene(active, dock->globalSource);
+					obs_source_release(active);
+				}
+				obs_source_release(transition);
+			}
+		}
+	}
+
+	// When preview scene changes, inject into the new preview scene
+	if (event == OBS_FRONTEND_EVENT_PREVIEW_SCENE_CHANGED) {
+		if (dock->isEnabled && dock->globalSource) {
+			obs_source_t *preview = obs_frontend_get_current_preview_scene();
+			if (preview) {
+				inject_into_scene(preview, dock->globalSource);
+				obs_source_release(preview);
+			}
 		}
 	}
 
